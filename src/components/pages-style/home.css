@@ -1,0 +1,60 @@
+.white {
+
+}
+
+.primary-color {
+    color                   : #3A6380;
+}
+
+.light-blue {
+    color                   : #71B7E8;
+}
+
+.home {
+
+}
+
+button {
+    border                  : 2px solid white !important;
+    font-size               : 18px !important;
+    font-weight             : 600 !important;
+}
+
+h1 {
+    font-size               : 56px !important;
+}
+
+.carousel {
+    background-image        : url('../../images/drives.jpg');
+    background-size         : cover;
+    background-repeat       : no-repeat;
+    background-blend-mode   : saturation;
+    box-shadow              :inset 0 0 0 2000px rgba(58, 99, 128, 0.8);
+    background-position     : 50% 55%;
+}
+
+.home.carousel {
+    height                  : 85vh;
+    width                   : 100%;
+    color                   : #ffffff;
+}
+
+.subtitle {
+    font-size               : 18px !important;
+    width                   : fit-content;
+}
+
+.subtitle::before {
+    display                 : block;
+    position                : relative;
+    content                 : '';
+    height                  : 4px;
+    width                   : 70%;
+    top                     : 0;
+    background-color        : #ffffff;
+    left                    : 0;
+}
+
+#work_with_us {
+
+}
