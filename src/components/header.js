@@ -9,7 +9,7 @@ import { Container } from "react-bootstrap"
 const Header = ({ siteTitle }) => (
   <header
   >
-    <Navbar className="py-5" bg="transparent" expand="lg" fixed="top">
+    <Navbar className="py-4" bg="transparent" expand="lg" fixed="top">
     <Container>
       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

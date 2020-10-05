@@ -13,10 +13,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
+  background-color: #F4F4F4 !important;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -24,9 +25,16 @@ body {
 }
 
 
+.w-70 {
+  width: 70% !important;
+  max-width: 70% !important;
+}
+
+
 h3 {
   font-family: 'Bebas Neue', cursive !important;
   color: #3A6380;
+  letter-spacing: 1px
 }
 
 article,
@@ -94,7 +102,7 @@ h1 {
   font-family: 'Bebas Neue', cursive;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 3.2rem;
+  font-size: 3.475rem !important;
   line-height: 1.1;
 }
 mark {
@@ -261,6 +269,26 @@ textarea {
 *:after {
   box-sizing: inherit;
 }
+
+section.content {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.para-1 {
+  font-size: 1rem !important;
+  text-align: justify;
+  line-height: 1.6;
+  text-justify: inter-word;
+}
+
+.para-2 {
+  font-size: 0.875rem !important;
+  text-justify: inter-word;
+  text-align: justify;
+  line-height: 1.6;
+}
+
 h2 {
   margin-left: 0;
   margin-right: 0;
@@ -273,10 +301,24 @@ h2 {
   color: inherit;
   font-family: 'Bebas Neue', cursive;
   font-weight: bold;
+  color: #3A6380;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 3rem !important;
   line-height: 1.1;
 }
+
+h2.divider::before {
+    display                 : block;
+    position                : relative;
+    content                 : '';
+    height                  : .0785rem;
+    width                   : 202px;
+    top                     : 0;
+    margin-bottom           : 2rem;
+    background-color        : #7070705a;
+    left                    : 0;
+}
+
 h3 {
   margin-left: 0;
   margin-right: 0;
@@ -286,13 +328,13 @@ h3 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #3A6380;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
-  line-height: 1.1;
+  font-size: 2.5rem !important;
+  line-height: 1.375 !important;
 }
 h4 {
   margin-left: 0;
@@ -303,12 +345,11 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #3A6380;
   font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.1;
 }
 h5 {
@@ -531,6 +572,58 @@ p *:last-child {
 li > p {
   margin-bottom: calc(1.45rem / 2);
 }
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 1rem;
+  gap: .875rem;
+
+  @if ($multicolumn) {
+    grid-template-columns: repeat(auto-fill, minmax(22ch, 1fr));
+  }
+}
+
+li {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 3em;
+  align-items: start;
+  font-size: .875rem;
+  line-height: 1.45;
+
+  @if ($multicolumn == false) {
+    max-width: 25ch;
+  }
+}
+
+ul li::before {
+  content: attr(data-icon);
+  font-size: .875rem !important;
+}
+
+ol {
+    --li-bg: #3A6380;
+    counter-reset: orderedlist;
+}
+
+ol li::before {
+    counter-increment: orderedlist;
+    content: counter(orderedlist);
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.725;
+    width: 1.4rem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--li-bg);
+    border-radius: 0em;
+}
+
+
 code {
   font-size: 0.85rem;
   line-height: 1.45rem;
