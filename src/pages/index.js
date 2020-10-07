@@ -1,13 +1,25 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import "../components/pages-style/home.css"
 import { Container } from "react-bootstrap"
+import { FiChevronRight } from "react-icons/fi";
 
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Logos from "../components/logos"
 import SEO from "../components/seo"
+import HumanResources from '../images/assets/humanresources.png'
+import SocialCare from '../images/assets/socialcare.png'
+import Alaf from '../images/client_logo/alaf.png'
+import Shanta from '../images/client_logo/shantagold.png'
+import Muhimbili from '../images/client_logo/muhimbili.png'
+import Tanesco from '../images/client_logo/tanesco.png'
+import Bayport from '../images/client_logo/bayport.png'
+
+
+
+console.log(Logos);
 
 const IndexPage = () => (
   <Layout>
@@ -32,11 +44,11 @@ const IndexPage = () => (
          </p>
        </div>
        <div className="d-inline-block my-2">
-       <button type="button" class="btn btn-lg btn-outline-light text-white">
+       <button type="button" className="btn btn-lg btn-outline-light text-white">
          OUR SERVICES
        </button>
 
-       <button type="button"  id="work_with_us" class="btn btn-light btn-lg primary-color mx-3">
+       <button type="button"  id="work_with_us" className="btn btn-light btn-lg primary-color mx-3">
          WORK WITH US
        </button>
        </div>
@@ -46,11 +58,42 @@ const IndexPage = () => (
 
     </div>
     <div className="sponsor-banner">
+      <div className="w-90 h-100 mx-auto">
+        <div className="row h-100">
+          <div className="col-3 h-100">
+            <div className="w-100 h-100 d-flex align-items-center">
+              <span className="mb-0 title">
+                WE HANDLE THEIR
+                IT SOLUTIONS, THEY 
+                CONCENTRATE ON BUSINESS:
+              </span>
+            </div>
+          </div>
+
+          <div className="col-7 overflow">
+            <div className="h-100 d-flex align-items-center">
+              <img src={Alaf} alt="alaf logo" className="my-0 mr-2 ml-4 d-inline"/>
+              <img src={Shanta} alt="alaf logo" className="col my-0 mx-3 px-4 d-inline"/>
+              <img src={Muhimbili} alt="alaf logo" className="col my-0 mx-3 px-4 d-inline"/>
+              <img src={Tanesco} alt="alaf logo" className="col my-0 mx-3 px-4 d-inline"/>
+              <img src={Bayport} alt="alaf logo" className="col my-0 ml-3 px-4 d-inline"/>
+            </div>
+          </div>
+
+          <div className="h-100 d-flex align-items-center justify-content-center col-2">
+              <FiChevronRight className="fi-icons" />
+              <span className="see-all">
+                see all
+              </span>
+              </div>
+
+        </div>
+      </div>
     </div>
 
     <section id="about_us" className="content">
       <Container>
-        <div className="d-block w-100 mx-auto">
+        <div className="d-block w-80 mx-auto">
             <h2 className="divider">
               About us
             </h2>
@@ -67,6 +110,7 @@ const IndexPage = () => (
              <div className="row mx-0">
              <div className="col-12 col-lg-5 pl-0 pr-0">
                 {/* image here */}
+                <img src={SocialCare} alt="assist and social care" className="mt-3 mb-2" />
                 <p className="my-3 pl-0 pr-0 para-2 w-100">
                 We assists in optimising resources by addressing the key technology risk markets.             
                 </p>
@@ -74,6 +118,7 @@ const IndexPage = () => (
 
               <div className="col-12 col-lg-7 pl-3 pr-0">
                 {/* image here */}
+                <img src={HumanResources} alst="pool of skilled personel" className="mt-3 mb-2" />
                 <p className="my-3 pl-0 pr-0 para-2 w-100">
                 Highly skilled professionals across all domains, who deliver solutions, that exceed our customer requirements.                </p>
               </div>
@@ -154,7 +199,7 @@ const IndexPage = () => (
     
     <section id="solution_overview" className="content">
       <Container>
-        <div className="d-block w-100 mx-auto">
+        <div className="d-block w-80 mx-auto">
             <h2 className="divider">
               our solution overview
             </h2>
@@ -287,10 +332,24 @@ const IndexPage = () => (
         </div>
       </Container>
     </section>
+
+    <section id="how_we_work" className="content pt-0">
+      <Container>
+        <div className="d-block w-80 mx-auto">
+          <h2 className="divider">
+              technology partners
+          </h2>
+
+          <div className="row w-100 mt-4">
+          <Logos />
+          </div>
+        </div>
+      </Container>
+    </section>
     
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;

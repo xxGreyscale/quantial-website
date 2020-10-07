@@ -24,10 +24,19 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+.gatsby-image-wrapper {
+  margin: auto;
+}
+
 
 .w-70 {
   width: 70% !important;
   max-width: 70% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+  max-width: 90% !important;
 }
 
 
@@ -36,6 +45,7 @@ h3 {
   color: #3A6380;
   letter-spacing: 1px
 }
+
 
 article,
 aside,

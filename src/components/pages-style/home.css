@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+
 .text-black {
     color                   : #333333;
 }
@@ -16,6 +19,35 @@
 
 .home {
 
+}
+
+.sponsor-banner .title {
+    font-family             : 'Montserrat', sans-serif !important;
+    font-size               : 1rem !important;
+    line-height             : 1.4;
+    font-weight             : 700;
+    color                   : #666666 !important;
+}
+
+.sponsor-banner svg {
+    stroke                  : #666666;
+    height                  : 3em;
+    width                   : 4em;
+}
+
+.sponsor-banner img {
+    max-width               : 160px;
+    max-height              : 160px;
+}
+
+.sponsor-banner .see-all {
+    color                   : #666666;
+    font-size               : .875rem;
+    margin-left: -1rem;
+}
+
+.overflow {
+    overflow-x: scroll;
 }
 
 button {
