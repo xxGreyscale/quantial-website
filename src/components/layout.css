@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+
+
+/* variable */
+:root {
+  --primary-color:    #3A6380;
+  --accent-color:     #71B7E8;
+
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -22,6 +31,21 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+
+.carousel {
+  background-size         : cover;
+  background-repeat       : no-repeat;
+  background-blend-mode   : saturation;
+  box-shadow              :inset 0 0 0 2000px rgba(58, 99, 128, 0.9);
+  background-position     : 50% 55%;
+}
+
+.carousel .description {
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .gatsby-image-wrapper {

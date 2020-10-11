@@ -1,0 +1,75 @@
+.w-65 {
+    width                   : 65% !important;
+}
+
+.solution-content {
+    width                   : 60% !important;
+}
+
+.solutions.carousel {
+    background-image        : url('../../images/vision.jpeg');
+    height                  : 85vh;
+    width                   : 100%;
+    color                   : #ffffff;
+}
+
+.quick-nav-container {
+    position            : fixed;
+    width               : fit-content;
+    height              : fit-content;
+}
+
+.quick-nav.title {
+    font-size           : .5rem;
+    color               : #eeeeee;
+}
+
+.quick-nav {
+    font-size           : 1rem !important;
+
+}
+
+.quick-nav.item {
+    text-transform      : uppercase;
+    font-weight         : 600;
+}
+
+.quick-nav.item:hover {
+    cursor              : pointer;
+    color               : var(--accent-color);
+}
+
+
+.s-sol-bg {
+    margin-bottom             : 1.5rem;
+    background-position-y     : 60%;
+    height                    : 20rem;
+    border-radius             : .175rem;
+    background-repeat         : no-repeat;
+    background-image          : url('../../images/security-locks.jpg');
+}
+
+.it-sol-bg {
+    margin-bottom             : 1.5rem;
+    background-size           : contain;
+    border-radius             : .175rem;
+    background-image          : url('../../images/server-wires.jpg');
+}
+
+.dp-sol-bg {
+    margin-bottom             : 1.5rem;
+    background-size           : cover;
+    border-radius             : .175rem;
+    background-position       : center;
+    background-image          : url('../../images/servers.jpg');
+}
+
+.ns-sol-bg {
+    margin-bottom             : 1.5rem;
+    background-size           : cover;
+    background-position       : center;
+    border-radius             : .175rem;
+    background-image          : url('../../images/pins.jpg');
+}
+
+

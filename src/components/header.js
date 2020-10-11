@@ -17,12 +17,12 @@ const Header = ({ siteTitle }) => (
         <Nav className="ml-auto" activeKey="/home">
         <Nav.Item>
           <Nav.Link as='li'>
-          <Link to="/">{siteTitle}</Link>      
+          <Link to="/quantial-solutions/">{siteTitle}</Link>      
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-1" as='li'>
-          <Link to="/page-2/">About</Link>
+          <Link to="/quantial-solutions/">About</Link>
             </Nav.Link>
         </Nav.Item>
         <Nav.Item>
