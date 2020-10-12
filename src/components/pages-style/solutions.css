@@ -1,5 +1,5 @@
-.w-65 {
-    width                   : 65% !important;
+.w-63 {
+    width                   : 63% !important;
 }
 
 .solution-content {
@@ -43,24 +43,44 @@
 .s-sol-bg {
     margin-bottom             : 1.5rem;
     background-position-y     : 60%;
-    height                    : 20rem;
+    height                    : 25rem;
     border-radius             : .175rem;
     background-repeat         : no-repeat;
+    background-blend-mode     : saturation;
+    box-shadow                : inset 0 0 0 2000px rgba(58, 99, 128, 0.7);
     background-image          : url('../../images/security-locks.jpg');
+}
+
+.s-sol-bg p,.it-sol-bg p , .db-sol-bg p, .ns-sol-bg p{
+    font-weight               : 600;
+}
+
+.stat-no {
+    font-size                 : 3.5rem;
+    font-family               : 'Bebas Neue', cursive !important;
 }
 
 .it-sol-bg {
     margin-bottom             : 1.5rem;
-    background-size           : contain;
+    background-size           : cover;
+    height                    : 25rem;
     border-radius             : .175rem;
+    background-repeat         : no-repeat;
+    background-blend-mode     : saturation;
+    box-shadow                : inset 0 0 0 2000px rgba(0, 0, 0, 0.75);
     background-image          : url('../../images/server-wires.jpg');
 }
 
-.dp-sol-bg {
+.db-sol-bg {
     margin-bottom             : 1.5rem;
     background-size           : cover;
     border-radius             : .175rem;
     background-position       : center;
+    height                    : 25rem;
+    border-radius             : .175rem;
+    background-repeat         : no-repeat;
+    background-blend-mode     : saturation;
+    box-shadow                : inset 0 0 0 2000px rgba(58, 99, 128, 0.7);
     background-image          : url('../../images/servers.jpg');
 }
 
@@ -69,7 +89,50 @@
     background-size           : cover;
     background-position       : center;
     border-radius             : .175rem;
+    height                    : 25rem;
+    border-radius             : .175rem;
+    background-repeat         : no-repeat;
+    background-blend-mode     : saturation;
+    box-shadow                : inset 0 0 0 2000px rgba(255, 255, 255, 0.75);
     background-image          : url('../../images/pins.jpg');
 }
 
+.ns-sol.headline {
+    font-size                   : 2.5rem !important;
+    margin-bottom               : 0 !important;
+    font-weight                 : 700;
+    color                       : var(--primary-color);
+}
+
+#ns-sol .bloq-text {
+    font-size                   : 1.5rem;
+    font-family                 : var(--bebas-neue);
+    color                       : #ffffff;
+    background-color            : var(--primary-color);
+    padding                     : 1.5rem 3rem;
+}
+.stat-headline-block {
+    margin-left               : 9rem;
+}
+
+#it-sol li.col, #db-sol li.col {
+    border-top              : 1px solid #70707040;
+    padding-top             : 1.5rem;
+}
+
+h6::after {
+    display                   : block;
+    position                  : relative;
+    content                 : '';
+    height                  : .0785rem;
+    width                   : 102px;
+    bottom                  : 0;
+    margin-top              : .875rem;
+    background-color        : #707070
+}
+
+/* Overides */
+li {
+    margin-bottom               : 0rem !important;
+}
 

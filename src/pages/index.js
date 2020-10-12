@@ -108,7 +108,7 @@ const IndexPage = () => (
             </div>
             <div className="col-12 col-lg-8">
              <div className="row mx-0">
-             <div className="col-12 col-lg-5 pl-0 pr-0">
+             <div className="col-12 col-lg-5 pl-0 pr-3">
                 {/* image here */}
                 <img src={SocialCare} alt="assist and social care" className="mt-3 mb-2" />
                 <p className="my-3 pl-0 pr-0 para-2 w-100">
@@ -285,7 +285,7 @@ const IndexPage = () => (
       </Container>
     </section>
     
-    <section id="how_we_work" className="content pt-0">
+    <section id="how_we_work" className="content">
       <Container>
         <div className="d-block w-100 mx-auto">
           <h2 className="divider">
@@ -333,7 +333,7 @@ const IndexPage = () => (
       </Container>
     </section>
 
-    <section id="how_we_work" className="content pt-0">
+    <section id="how_we_work" className="content">
       <Container>
         <div className="d-block w-80 mx-auto">
           <h2 className="divider">

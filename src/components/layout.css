@@ -7,7 +7,11 @@
 :root {
   --primary-color:    #3A6380;
   --accent-color:     #71B7E8;
+  --bebas-neue:       'Bebas Neue', cursive !important;      
+}
 
+.primary-color {
+  color: var(--primary-color);
 }
 
 html {
@@ -56,6 +60,11 @@ body {
 .w-70 {
   width: 70% !important;
   max-width: 70% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+  max-width: 80% !important;
 }
 
 .w-90 {
@@ -306,7 +315,6 @@ textarea {
 
 section.content {
   padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .para-1 {
@@ -322,6 +330,15 @@ section.content {
   text-align: justify;
   line-height: 1.6;
 }
+
+/* same with para-2 but with no justified words */
+.para-3 {
+  font-size: 0.875rem !important;
+  text-justify: distribute;
+  text-align: start;
+  line-height: 1.6;
+}
+
 
 h2 {
   margin-left: 0;

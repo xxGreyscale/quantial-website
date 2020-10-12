@@ -156,6 +156,10 @@ button {
     background-color        : #1D2429;
 }
 
+#about_us {
+    padding-bottom          : 5rem !important;
+}
+
 #about_us, #vision_n_aim {
     background-color        : #f0f0f0 !important;
 }
