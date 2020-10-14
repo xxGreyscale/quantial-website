@@ -674,6 +674,11 @@ ol li::before {
     border-radius: 0em;
 }
 
+.contacts.scrolled {
+  color               : #333333;
+}
+
+
 
 code {
   font-size: 0.85rem;

@@ -7,16 +7,11 @@ import React, { useState } from "react"
 import { Container } from "react-bootstrap"
 
 
-function NavbarColor () {
-  
-}
-
 
 const Header = ({ siteTitle }) => {
 
   const [navbar,setNavbar] = useState(false);
   const changeBackground = () => {
-    console.log(window.scrolly)
     if(window.scrollY >= 90) {
       setNavbar(true);
     } else {

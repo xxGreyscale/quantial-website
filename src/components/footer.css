@@ -1,0 +1,29 @@
+footer {
+    height                  : 50vh;
+    background-color        : var(--primary-color);
+}
+
+h4.underline {
+    font-size               : 2rem !important;
+    color                   : #ffffff !important;
+}
+
+h1.underline:after, h2.underline:after, h3.underline:after, h4.underline:after {
+    display                 : block;
+    position                : relative;
+    content                 : '';
+    height                  : .275rem;
+    width                   : 105%;
+    bottom                  : 0;
+    margin-top              : .5rem;
+    margin-bottom           : 1rem;
+    background-color        : #ffffff;
+    left                    : 0;
+}
+
+footer p.description {
+    font-size               : 1.5rem;
+    font-weight             : 500;
+    font-family             : var(--bebas-neue);
+    line-height             : 1.4;
+}

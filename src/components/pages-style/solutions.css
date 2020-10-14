@@ -24,8 +24,12 @@
     color               : #eeeeee;
 }
 
+.quick-nav.title.scrolled {
+    color               : #444444;
+}
+
 .quick-nav {
-    font-size           : 1rem !important;
+    font-size           : .875rem !important;
 
 }
 
@@ -36,6 +40,14 @@
 
 .quick-nav.item:hover {
     cursor              : pointer;
+    color               : var(--accent-color);
+}
+
+.quick-nav.item.scrolled {
+    color               : #333333;
+}
+
+.quick-nav.item.scrolled:hover {
     color               : var(--accent-color);
 }
 
