@@ -19,6 +19,19 @@
     text-transform      : uppercase !important;
 }
 
+.nav-item li a:hover {
+    color               : var(--accent-color);
+}
+
+.navbar {
+    padding             : 1.875rem 0rem !important;
+    background-color    : transparent;
+}
+
+.navbar.active {
+    background-color    : var(--primary-color);
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-left       : 1.45rem !important;

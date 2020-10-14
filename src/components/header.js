@@ -3,13 +3,33 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import "./header.css"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import { Container } from "react-bootstrap"
 
-const Header = ({ siteTitle }) => (
-  <header
+
+function NavbarColor () {
+  
+}
+
+
+const Header = ({ siteTitle }) => {
+
+  const [navbar,setNavbar] = useState(false);
+  const changeBackground = () => {
+    console.log(window.scrolly)
+    if(window.scrollY >= 90) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
+  
+  window.addEventListener('scroll', changeBackground)
+
+
+  return (<header
   >
-    <Navbar className="py-4" bg="transparent" expand="lg" fixed="top">
+    <Navbar className={navbar ? 'navbar active' : 'navbar'} expand="lg" fixed="top">
     <Container>
       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,25 +42,27 @@ const Header = ({ siteTitle }) => (
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-1" as='li'>
-          <Link to="/quantial-solutions/">About</Link>
+          <Link to="/about/">About</Link>
             </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-2" as='li'>
-          <Link to="/">Partners</Link>
+          <Link to="/partners/">Partners</Link>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="disabled" as='li'>
-          <Link to="/">Contacts</Link>
+          <Link to="/contact/">Contacts</Link>
           </Nav.Link>
         </Nav.Item>
       </Nav>
       </Navbar.Collapse>
     </Container>
 </Navbar>
-  </header>
-)
+  </header>)
+}
+
+
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

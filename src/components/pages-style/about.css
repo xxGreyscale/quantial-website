@@ -1,0 +1,12 @@
+.about.carousel {
+    background-image        : url('../../images/about-us.jpg');
+    height                  : 85vh;
+    width                   : 100%;
+    color                   : #ffffff;
+}
+
+#quantial_values img {
+    border-radius           : .125rem;
+    height                  : 25rem;
+    object-fit              : cover;
+}

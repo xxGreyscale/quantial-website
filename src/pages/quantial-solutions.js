@@ -7,8 +7,10 @@ import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
 
 
-const SecondPage = () => (
+const Solutions = () => (
   <Layout>
+        <SEO title="Our Solutions" />
+
         <div
     className="solutions carousel">
      <Container className="h-100 w-100">
@@ -442,4 +444,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Solutions

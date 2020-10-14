@@ -26,7 +26,7 @@ const Logos = () => {
     console.log(data);
     
     return  data?.allFile.edges.map(({node}) => (
-        <div className="col-3 d-flex mt-4 mb-5">
+        <div className="col-6 col-md-4 col-lg-3 d-flex mt-4 mt-lg-4 mb-5 mb-lg-5">
             <Img objectFit="contain"
             imgStyle={{ objectFit: 'contain'}}
             objectPosition="50% 50%" fixed={node.childImageSharp.fixed} />
