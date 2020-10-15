@@ -1,9 +1,13 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useStaticQuery, graphql } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 import "../components/pages-style/home.css"
 import { Container } from "react-bootstrap"
+
 import { FiChevronRight } from "react-icons/fi";
+import { FiChevronsDown } from "react-icons/fi";
 
 
 import Layout from "../components/layout"
@@ -54,13 +58,26 @@ const IndexPage = () => (
        </div>
        </div>
       </div>
+
+      <div id="scroll_button" className="d-block mx-auto w-100">
+        <div className="d-block" >
+          <span className="d-block text-center scroll-label" onClick={() => scrollTo('#about_us')}>
+            SCROLL DOWN
+          </span>
+          <div className="d-block mx-auto">
+            <div className="scroll-container mx-auto" onClick={() => scrollTo('#about_us')}>
+              <FiChevronsDown className="d-flex d-justify-content-center scroll-down text-center" />
+            </div>
+          </div>
+        </div>
+      </div>
      </Container>
 
     </div>
     <div className="sponsor-banner">
-      <div className="w-90 h-100 mx-auto">
-        <div className="row h-100">
-          <div className="col-3 h-100">
+      <div className="w-100 w-lg-90 h-100 mx-auto mx-lg-auto px-md-2">
+        <div className="row mx-0 w-100 h-100">
+          <div className="col-5 col-md-4 col-lg-3 h-100">
             <div className="w-100 h-100 d-flex align-items-center">
               <span className="mb-0 title">
                 WE HANDLE THEIR
@@ -70,7 +87,7 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="col-7 overflow">
+          <div className="col-6 col-md-6 col-lg-7 overflow">
             <div className="h-100 d-flex align-items-center">
               <img src={Alaf} alt="alaf logo" className="my-0 mr-2 ml-4 d-inline"/>
               <img src={Shanta} alt="alaf logo" className="col my-0 mx-3 px-4 d-inline"/>
@@ -80,9 +97,9 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="h-100 d-flex align-items-center justify-content-center col-2">
+          <div className="h-100 d-flex align-items-center justify-content-center col-2 col-md-2 see-all">
               <FiChevronRight className="fi-icons" />
-              <span className="see-all">
+              <span className="ml-n2">
                 see all
               </span>
               </div>
@@ -93,22 +110,22 @@ const IndexPage = () => (
 
     <section id="about_us" className="content">
       <Container>
-        <div className="d-block w-80 mx-auto">
+        <div className="d-block w-100 w-md-100 w-lg-80 mx-auto">
             <h2 className="divider">
               About us
             </h2>
-          <div className="row mx-0">
+          <div className="row mx-lg-0">
             <div className="col-12 col-lg-4 pl-lg-0">
-            <p className="my-3 pl-0 pr-0 para-2">
+            <p className="my-3 pl-lg-0 pr-lg-0 para-2">
             Quantial is a fully Tanzanian IT solutions provider with the vision of helping businesses use technology to effectively grow, manage, and protect their day-today operations. <br /> <br />
             </p>
 
-            <p className="my-3 pl-0 pr-0 para-2">
+            <p className="my-3 pl-0 pr-lg-0 para-2">
             We recognize that IT is a critical element to the productivity and success of your business, that’s why our core mission is to make the complexities of IT simple and help businesses drive down costs.            </p>
             </div>
             <div className="col-12 col-lg-8">
              <div className="row mx-0">
-             <div className="col-12 col-lg-5 pl-0 pr-3">
+             <div className="col-12 col-lg-5 px-2 pl-lg-0 pr-lg-3">
                 {/* image here */}
                 <img src={SocialCare} alt="assist and social care" className="mt-3 mb-2" />
                 <p className="my-3 pl-0 pr-0 para-2 w-100">
@@ -116,15 +133,15 @@ const IndexPage = () => (
                 </p>
               </div>
 
-              <div className="col-12 col-lg-7 pl-3 pr-0">
+              <div className="col-12 col-lg-7 px-2 pl-lg-3 pr-lg-0">
                 {/* image here */}
                 <img src={HumanResources} alst="pool of skilled personel" className="mt-3 mb-2" />
-                <p className="my-3 pl-0 pr-0 para-2 w-100">
+                <p className="my-3 pl-lg-0 pr-lg-0 para-2 w-100">
                 Highly skilled professionals across all domains, who deliver solutions, that exceed our customer requirements.                </p>
               </div>
              </div>
 
-             <p className="my-3 px-0 para-2 w-100">
+             <p className="my-3 px-lg-0 para-2 w-100">
              Our innovative approaches paired with a deep understanding of all aspects of the business workflow, 
              helps reduce risk in the system and drive significant capital and operational benefits for organizations.
             </p>
@@ -136,13 +153,13 @@ const IndexPage = () => (
     </section>
     
     <section id="quantial_value" className="content">
-      <div className="row mx-0 w-100 px-0">
+      <div className="row mx-0 w-100 px-0 flex-column-reverse flex-lg-row">
         <div className="col-12 col-lg-8">
           <div className="d-flex justify-content-center align-items-center w-100 h-100">
-            <div className="d-block w-100">
+            <div className="d-block my-5 my-lg-0 w-100">
               <h3 className="text-center mx-auto">
-              “Quantial boasts unmatched technology<br /> skills, as well as 
-              market-leading expertise<br /> and experience that creates a powerful <br />combination.” 
+                “Quantial boasts unmatched technology<br /> skills, as well as 
+                market-leading expertise<br /> and experience that creates a powerful <br />combination.” 
               </h3>
               <p className="font-weight-bold text-center my-3">
                   Quantial technology solutions values
@@ -150,7 +167,7 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        <div className="col-12 w-100 col-lg-4 p-lg-0">
+        <div className="col-12 w-100 col-lg-4 p-lg-0 order-sm-1">
           <div className="unique-value-img w-100">
           {/* background image */}
           </div>
@@ -165,9 +182,9 @@ const IndexPage = () => (
           {/* background image */}
           </div>
         </div>
-        <div className="col-12 w-100 col-lg-8 px-5">
+        <div className="col-12 w-100 col-lg-8 px-3 px-lg-5">
           <div className="d-flex align-items-center mt-3 w-100 h-100">
-            <div className="d-block mx-5 w-100">
+            <div className="d-block mx-lg-5 my-5 my-lg-0 mx-3 w-100">
               <h2 className="text-left divider">
                 our vision &amp; mission
               </h2>
@@ -176,7 +193,7 @@ const IndexPage = () => (
                 technology partner for the service-driven and technology industry in East Africa we are aiming :
               </p>
 
-              <ol className="mt-4 w-75">
+              <ol className="mt-4">
                 <li>
                   To promote new uses of information technology
                 </li>
@@ -199,8 +216,8 @@ const IndexPage = () => (
     
     <section id="solution_overview" className="content">
       <Container>
-        <div className="d-block w-80 mx-auto">
-            <h2 className="divider">
+        <div className="d-block w-100 w-md-100 w-lg-80 mx-auto">
+            <h2 className="divider mb-3 mb-lg-0">
               our solution overview
             </h2>
 
@@ -293,7 +310,7 @@ const IndexPage = () => (
           </h2>
 
           <ol className="mt-5 row">
-                <li className="col">
+                <li className="col-12 col-md-auto col-lg w-100 mb-3 my-lg-0">
                   <div className="w-100">
                     <h4 className="text-black">
                     IMPLEMENT &amp; SUPPORT
@@ -305,7 +322,7 @@ const IndexPage = () => (
                     </p>
                   </div>
                 </li>
-                <li className="col">
+                <li className="col-12 col-md-auto col-lg w-100 my-3 my-lg-0">
                 <div className="w-100">
                     <h4 className="text-black">
                       evaluate
@@ -317,7 +334,7 @@ const IndexPage = () => (
                   </div>
                 </li>
 
-                <li className="col">
+                <li className="col-12 col-md-auto col-lg w-100 my-3 my-lg-0">
                   <div className="w-100">
                    <h4 className="text-black">
                     design &amp; develop
@@ -335,7 +352,7 @@ const IndexPage = () => (
 
     <section id="how_we_work" className="content">
       <Container>
-        <div className="d-block w-80 mx-auto">
+        <div className="d-block w-100 w-md-100 w-lg-80 mx-auto">
           <h2 className="divider">
               technology partners
           </h2>
