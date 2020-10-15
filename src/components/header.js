@@ -5,6 +5,7 @@ import "./header.css"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { Container } from "react-bootstrap"
+import BrandLogo from "../images/assets/quantial-white-sm.png";
 
 
 
@@ -26,7 +27,9 @@ const Header = ({ siteTitle }) => {
   >
     <Navbar className={navbar ? 'navbar active' : 'navbar'} expand="lg" fixed="top">
     <Container>
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="/">
+        <img src={BrandLogo} alt="quantial white logo" height="60" className="m-0" />
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" activeKey="/home">
