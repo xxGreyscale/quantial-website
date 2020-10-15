@@ -6,6 +6,8 @@ import "../components/pages-style/solutions.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 
 
 const Solutions = () => {
@@ -53,16 +55,16 @@ const Solutions = () => {
                     Quick Nav:
                   </span>
                   <ul className="quick-nav mt-3">
-                    <li className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li onClick={() => scrollTo('#s-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       security solutions
                     </li>
-                    <li className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li onClick={() => scrollTo('#it-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       managed it solutions
                     </li>
-                    <li className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li onClick={() => scrollTo('#ns-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       network solutions
                     </li>
-                    <li className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li onClick={() => scrollTo('#db-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       data backup &amp; recovery
                     </li>
   

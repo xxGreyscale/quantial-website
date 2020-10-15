@@ -5,6 +5,7 @@ module.exports = {
     author: `@quantialSolutions`,
   },
   plugins: [
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
