@@ -1,9 +1,6 @@
-.w-63 {
-    width                   : 63% !important;
-}
 
 .solution-content {
-    width                   : 60% !important;
+    width                   : fit-content !important;
 }
 
 .solutions.carousel {
@@ -14,7 +11,7 @@
 }
 
 .quick-nav-container {
-    position            : fixed;
+    position            : relative;
     width               : fit-content;
     height              : fit-content;
 }
@@ -51,11 +48,14 @@
     color               : var(--accent-color);
 }
 
+.sol-bg {
+    height                    : fit-content;
+}
+
 
 .s-sol-bg {
     margin-bottom             : 1.5rem;
     background-position-y     : 60%;
-    height                    : 25rem;
     border-radius             : .175rem;
     background-repeat         : no-repeat;
     background-blend-mode     : saturation;
@@ -75,7 +75,6 @@
 .it-sol-bg {
     margin-bottom             : 1.5rem;
     background-size           : cover;
-    height                    : 25rem;
     border-radius             : .175rem;
     background-repeat         : no-repeat;
     background-blend-mode     : saturation;
@@ -88,7 +87,6 @@
     background-size           : cover;
     border-radius             : .175rem;
     background-position       : center;
-    height                    : 25rem;
     border-radius             : .175rem;
     background-repeat         : no-repeat;
     background-blend-mode     : saturation;
@@ -101,7 +99,6 @@
     background-size           : cover;
     background-position       : center;
     border-radius             : .175rem;
-    height                    : 25rem;
     border-radius             : .175rem;
     background-repeat         : no-repeat;
     background-blend-mode     : saturation;
@@ -128,7 +125,7 @@
 }
 
 #it-sol li.col, #db-sol li.col {
-    border-top              : 1px solid #70707040;
+    border-top              : 0px solid #70707040;
     padding-top             : 1.5rem;
 }
 
@@ -148,3 +145,26 @@ li {
     margin-bottom               : 0rem !important;
 }
 
+@media (min-width: 992px) {
+
+    #it-sol li.col, #db-sol li.col {
+        border-top              : 1px solid #70707040;
+    }
+    
+
+    .w-lg-63 {
+        width                   : 63% !important;
+    }
+    
+    .quick-nav-container {
+        position                : fixed;
+    }
+
+    .sol-bg {
+        height                  : 25rem;
+    }
+
+    .solution-content {
+        width                   : 60% !important;
+    }
+}

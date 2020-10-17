@@ -34,7 +34,7 @@ const Solutions = () => {
        <div className="d-flex h-100 align-items-center">
          <div className="d-block w-100">
            <div className="row">
-             <div className="col">
+             <div className="col-12 col-lg">
                 <h1 className="my-0">
                   our
                 </h1>
@@ -48,9 +48,9 @@ const Solutions = () => {
                 </p>
               </div>
              </div>
-             <div className="col">
-             <div className="d-flex w-100 justify-content-end">
-              <div className="d-block quick-nav-container text-lg-right">
+             <div className="col-12 col-lg">
+             <div className="d-block d-lg-flex w-100 justify-content-end">
+              <div className="d-block quick-nav-container text-left text-lg-right">
               <span className={quickNav ? "secondary quick-nav title scrolled font-weight-normal": "secondary quick-nav title font-weight-normal"}>
                     Quick Nav:
                   </span>
@@ -88,10 +88,10 @@ const Solutions = () => {
             </h2>
             </Container>
             <div className="solution-content">
-            <div className="s-sol-bg w-100">
+            <div className="s-sol-bg sol-bg w-100">
               <Container className="h-100">
                 <div className="d-flex h-100 align-items-center w-100 justify-content-end">
-                  <div className="d-block w-80">
+                  <div className="d-block w-100 w-lg-80">
                    <div className="d-flex my-3">
                     <p className="d-inline text-white mb-0 mx-1">
                         <span className="stat-no">
@@ -134,7 +134,7 @@ const Solutions = () => {
             </div>
             </div>
             <Container>
-              <div className="w-63">
+              <div className="w-100 w-lg-63">
                 <p>
                       
                   At Quantial, we have experience in providing implementation , support, managed, and fully outsourced security services to organisations.
@@ -181,16 +181,16 @@ const Solutions = () => {
                 MANAGED IT SOLUTIONS
             </h2>
   
-            <p className="para-1 w-63">
+            <p className="para-1 w-100 w-lg-63">
               The current surge of rapid technological advance has left many organisations overwhelmed on 
               various fronts in terms of dealing with their IT infrastructure in an efficient, productive and secure manner.
             </p>
             </Container>
             <div className="solution-content">
-            <div className="it-sol-bg w-100">
+            <div className="it-sol-bg sol-bg w-100">
               <Container className="h-100">
                 <div className="d-flex h-100 align-items-center w-100 justify-content-end">
-                  <div className="d-block w-80">
+                  <div className="d-block w-100 w-lg-80">
                    <div className="d-flex my-3">
                     <p className="d-inline text-white mb-0 mx-1">
                         <span className="stat-no">
@@ -221,7 +221,7 @@ const Solutions = () => {
             </div>
             </div>
             <Container>
-              <div className="w-63">
+              <div className="w-100 w-lg-63">
                 <p className="para-1">      
                 We combine years of experience as well as standardised global delivery platform aligned to ITIL processes and best practices, 
                 to deliver managed services to our clients. We do this by enhancing your IT and business functions through improved agility and scalability. 
@@ -229,8 +229,8 @@ const Solutions = () => {
                 By doing this we enable our clients focus on their core business.
                 </p>
   
-                <ol className="mt-5 row">
-                  <li className="col px-2">
+                <ol className="mt-lg-5 row">
+                  <li className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                     <div className="w-100">
                       <h4>MANAGED NETWORK<br /> SOLUTIONS</h4>
                     <p className="para-3 ml-n5 pl-2 pr-1">
@@ -241,7 +241,7 @@ const Solutions = () => {
                     </div>
                     
                   </li>
-                  <li className="col px-2">
+                  <li className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                   <div className="w-100">
                       <h4>managed Security<br /> solutions</h4>
                     <p className="para-3 ml-n5 pl-2 pr-1">
@@ -251,7 +251,7 @@ const Solutions = () => {
                     </div>
   
                   </li>
-                  <li className="col px-2">
+                  <li className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                   <div className="w-100">
                       <h4> desktop support<br /> solutions</h4>
                     <p className="para-3 ml-n5 pl-2 pr-1">
@@ -274,10 +274,10 @@ const Solutions = () => {
             </h2>
             </Container>
             <div className="solution-content">
-            <div className="ns-sol-bg w-100">
+            <div className="ns-sol-bg sol-bg w-100">
               <Container className="h-100">
                 <div className="d-flex h-100 align-items-center w-100 justify-content-end">
-                  <div className="d-block w-80">
+                  <div className="d-block w-100 w-lg-80">
                    <div className="d-flex my-3">
                      <p className="ns-sol headline">
                       27 collective years of<br />
@@ -291,7 +291,7 @@ const Solutions = () => {
             </div>
             </div>
             <Container>
-              <div className="w-63">
+              <div className="w-100 w-lg-63">
                 <p className="para-1">   
                 Our consulting teams can share their strategic, architectural, operational, and implementation expertise. 
                 Our support services ensure peak network performance and higher availability, while optimising your costs. 
@@ -337,21 +337,21 @@ const Solutions = () => {
                   </li>
                 </ol>
   
-                <p className="para-1">
+                <p className="para-1 mt-3 mt-md-3 mt-lg-0">
                   <b>Collaboration Solutions</b> - personalized experiences for the modern workforce. 
                   Improve employee productivity and engagement while improving customer experiences. 
                 </p>
   
-                <p className="para-1">
+                <p className="para-1 mt-3 mt-md-3 mt-lg-0">
                   <b>Network and Application Monitoring</b> - proactive and continuous fault and performance evaluation of all 
                 networking components i.e. routers, switches, servers, to optimise and maintain their availability at all times.
                 </p>
   
-                <p className="para-1">
+                <p className="para-1 mt-3 mt-md-3 mt-lg-0">
                   <b>Network Assessment </b> - to keep up with compliance/regulations or identifying areas of improvement.
                 </p>
   
-                <p className="para-1">
+                <p className="para-1 mt-3 mt-md-3 mt-lg-0">
                   <b>Structured Cabling Solutions</b> - simplifying the planning, design, and construction of complex networks 
                   by providing an organised, standardised approach to enhancing network infrastructure with category and 
                   fiber cabling.
@@ -367,16 +367,16 @@ const Solutions = () => {
               DATA BACK UP &amp; RECOVERY
             </h2>
   
-            <p className="para-1 w-63">
+            <p className="para-1 w-100 w-lg-63">
               Data is the foundation of all successful enterprises. Data is what drives real-time insights and 
               decisions that in turn allow for agile operations and keep enterprises one step ahead of the competition. 
             </p>
             </Container>
             <div className="solution-content">
-            <div className="db-sol-bg w-100">
+            <div className="db-sol-bg sol-bg w-100">
               <Container className="h-100">
                 <div className="d-flex h-100 align-items-center w-100 justify-content-end">
-                  <div className="d-block w-80">
+                  <div className="d-block w-100 w-lg-80">
                    <div className="d-flex my-3">
                     <p className="d-inline text-white mb-0 mx-1">
                         <span className="stat-no">
@@ -408,7 +408,7 @@ const Solutions = () => {
             </div>
             </div>
             <Container>
-              <div className="w-63">
+              <div className="w-100 w-lg-63">
                 <p className="para-1">      
                   As enterprises adopt digital transformation, and the Internet of Things continues to grow by leaps and bounds, 
                   a huge amount of data from the likes of emails, analytical data, transactional data etc, is generated.<br /> 
@@ -417,8 +417,8 @@ const Solutions = () => {
                   you with:
                 </p>
   
-                <ol className="mt-5 row">
-                  <li className="col px-2">
+                <ol className="mt-lg-5 row">
+                  <li className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                     <div className="w-100">
                         <h4 className="text-black">DATA MANAGEMENT</h4>
                       <p className="para-3 ml-n5 pl-2 pr-1">
@@ -429,7 +429,7 @@ const Solutions = () => {
                     </div>
   
                   </li>
-                  <li className="col px-2">
+                  <li className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                     <div className="w-100">
                         <h4 className="text-black"> DATA AVAILABILITY</h4>
                       <p className="para-3 ml-n5 pl-2 pr-1">
@@ -441,7 +441,7 @@ const Solutions = () => {
                     </div>
                   </li>
   
-                  <div className="col px-2">
+                  <div className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                     <div className="w-100">
                       <h3>
                         Data is a precious

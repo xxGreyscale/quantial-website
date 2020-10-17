@@ -40,7 +40,7 @@ const About = () => (
 
     <section id="about_us" className="content">
       <Container>
-        <div className="d-block w-80 mx-auto">
+        <div className="d-block w-100 w-lg-80 mx-auto">
             <h2 className="divider">
               About us
             </h2>
@@ -79,10 +79,10 @@ const About = () => (
         <section id="quantial_values" className="content">
             <div className="">
                 <div className="row">
-                    <div className="col-5">
+                    <div className="col-12 col-md-12 col-lg-5">
                         <img src={uniqueBoat} className="w-100 shadow-sm"/>
                     </div>
-                    <div className="col-7">
+                    <div className="col-12 col-md-12 col-lg-7">
                         <div className="h-100 d-flex align-items-center">
                             <h2>
                                 The quintal vision brings a proven, unique blend of business, 
@@ -95,7 +95,7 @@ const About = () => (
         </section>
 
         <section className="content">
-            <div className="d-block w-80 mx-auto">
+            <div className="d-block w-100 w-lg-80 mx-auto">
                 <h2 className="divider">
                     About us
                 </h2>

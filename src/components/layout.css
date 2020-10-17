@@ -787,7 +787,7 @@ pre tt:after {
     font-size: 100%;
   }
 
-  .para-2 {
+  .para-2, li {
     font-size: 1rem !important;
   }
 }
