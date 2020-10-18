@@ -782,6 +782,34 @@ pre tt:after {
   margin-top: -6rem !important;
 }
 
+label {
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+input, textarea {
+  font-size: .875rem !important;
+  background-color: #ECF1F4 !important;
+  border: 1px solid #C3C3C3;
+}
+
+input {
+  padding: 1.4rem 1rem !important;
+}
+
+button[type=submit] {
+  height: fit-content;
+  width: fit-content;
+  border-radius: .125rem !important;
+  padding: 1rem 1.5rem !important;
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -789,5 +817,9 @@ pre tt:after {
 
   .para-2, li {
     font-size: 1rem !important;
+  }
+
+  button[type=submit] {
+    width: 100%;
   }
 }

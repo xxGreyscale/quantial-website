@@ -1,6 +1,5 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, useStaticQuery, graphql } from "gatsby"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import "../components/pages-style/home.css"
