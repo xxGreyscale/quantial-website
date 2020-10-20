@@ -1,0 +1,15 @@
+
+
+.contacts.carousel {
+    background-image        : url('../../images/contact-us.jpg');
+    height                  : 85vh;
+    width                   : 100%;
+    color                   : #ffffff;
+}
+
+@media (max-width: 426px) {  
+    .contacts.carousel {
+        height: 100vh;
+        min-height: 100vh;
+    }
+}

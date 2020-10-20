@@ -31,7 +31,7 @@ const IndexPage = () => (
     className="home carousel">
      <Container className="h-100 w-100">
      <div className="d-flex h-100 align-items-center">
-       <div className="d-block">
+       <div className="d-block mt-5 mt-lg-0 mt-md-0">
        <h1 className="my-0">
           Experienced.
         </h1>
@@ -46,12 +46,12 @@ const IndexPage = () => (
            We bring <b>Proven, unique blend of business, quantitative and <br /> and technological skills</b> to the industry
          </p>
        </div>
-       <div className="d-inline-block my-2">
-       <button type="button" className="btn btn-lg btn-outline-light text-white">
+       <div className="d-inline-block my-3 my-lg-5">
+       <button type="button" className="col-12 col-md-auto col-lg-auto btn btn-lg btn-outline-light text-white">
          OUR SERVICES
        </button>
 
-       <button type="button"  id="work_with_us" className="btn btn-light btn-lg primary-color mx-3">
+       <button type="button"  id="work_with_us" className="col-12 col-md-auto col-lg-auto btn btn-light btn-lg primary-color mx-md-3 mx-lg-3 my-3 my-md-0 my-lg-0">
          WORK WITH US
        </button>
        </div>
@@ -60,11 +60,11 @@ const IndexPage = () => (
 
       <div id="scroll_button" className="d-block mx-auto w-100">
         <div className="d-block" >
-          <span className="d-block text-center scroll-label" onClick={() => scrollTo('#about_us')}>
+          <span tabIndex='0' role = "button" className="d-block text-center scroll-label" onClick={() => scrollTo('#about_us')}>
             SCROLL DOWN
           </span>
           <div className="d-block mx-auto">
-            <div className="scroll-container mx-auto" onClick={() => scrollTo('#about_us')}>
+            <div tabIndex='0' role = "button" className="scroll-container mx-auto" onClick={() => scrollTo('#about_us')}>
               <FiChevronsDown className="d-flex d-justify-content-center scroll-down text-center" />
             </div>
           </div>
@@ -134,7 +134,7 @@ const IndexPage = () => (
 
               <div className="col-12 col-lg-7 px-2 pl-lg-3 pr-lg-0">
                 {/* image here */}
-                <img src={HumanResources} alst="pool of skilled personel" className="mt-3 mb-2" />
+                <img src={HumanResources} alt="pool of skilled personel" className="mt-3 mb-2" />
                 <p className="my-3 pl-lg-0 pr-lg-0 para-2 w-100">
                 Highly skilled professionals across all domains, who deliver solutions, that exceed our customer requirements.                </p>
               </div>

@@ -2,15 +2,44 @@ import React, { useState } from "react"
 import Layout from "../components/layout";
 import { Container } from "react-bootstrap"
 import SEO from "../components/seo"
+import "../components/pages-style/contacts.css"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { FiChevronsDown } from "react-icons/fi";
 
 
+const submitForm = (ev) => {
+  ev.preventDefault();
+  const form = ev.target;
+  const data = new FormData(form);
+  const xhr = new XMLHttpRequest();
+  xhr.open(form.method, form.action);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      form.reset();
+      this.setState({ status: "SUCCESS" });
+    } else {
+      this.setState({ status: "ERROR" });
+    }
+  };
+  xhr.send(data);
+}
 
 const Contact = () => {
 
   // write our logic here
   const [contacts,setContacts] = useState(false);
+  const [dNone,setNoDisplay] = useState(false);
+
+  const dontDisplay = () => {
+    if(window.scrollY >= 120 * window.innerHeight/100) {
+      setNoDisplay(true);
+    } else {
+      setNoDisplay(false);
+    }
+  }
+
   const changeContactsColor = () => {
     if(window.scrollY >= 60 * window.innerHeight/100) {
       setContacts(true);
@@ -18,18 +47,21 @@ const Contact = () => {
       setContacts(false);
     }
   }
-  window.addEventListener('scroll', changeContactsColor)
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', changeContactsColor)
+    window.addEventListener('scroll', dontDisplay)
 
+  }
   return (
     <Layout>
     <SEO title="Contact Us" />
 
 <div
-className="solutions carousel">
+className="contacts carousel">
 <Container className="h-100 w-100">
 <div className="d-flex h-100 align-items-center">
-  <div className="d-block w-100">
-    <div className="row">
+  <div className="d-block w-100 mt-5 mt-md-0 mt-lg-0">
+    <div className="row mt-5 mt-md-0 mt-lg-0">
       <div className="col-12 col-lg">
           <h1 className="my-0">
             Get
@@ -46,10 +78,12 @@ className="solutions carousel">
       <div className="col-12 col-lg">
       <div className="d-block d-lg-flex w-100 justify-content-end">
         <div className="d-block quick-nav-container text-left text-lg-right mt-4 mt-md-3 mt-lg-0">
-        <span className= {contacts ? 'text-black title font-weight-bold' : 'secondary quick-nav title font-weight-bold'}>
+        <span 
+        className= 
+        {dNone ? 'd-none': contacts ? 'scrolled title font-weight-bold' : 'secondary quick-nav title font-weight-bold'}>
             CONTACTS
             </span>
-            <ul className={contacts ? 'contacts scrolled' : 'mt-4 font-weight-normal' }>
+            <ul className={dNone ? 'd-lg-none': contacts ? 'mt-2 contacts scrolled' : 'mt-2 font-weight-normal' }>
               <li style={{ gridGap: '0rem' }} className="my-1">
               6th Floor, Tanzanite Park,<br /> Old Bagamoyo Road,<br />
                 Dar es Salaam, TANZANIA
@@ -76,13 +110,13 @@ className="solutions carousel">
     </div>
   </div>
   </div>
-    <div id="scroll_button" className="d-block mx-auto w-100">
+    <div id="scroll_button" className="d-block w-100">
         <div className="d-block" >
-          <span className="d-block text-center scroll-label" onClick={() => scrollTo('#about_us')}>
+          <span className="d-block text-right text-md-center text-lg-center scroll-label" onClick={() => scrollTo('#about_us')}>
             WRITE US
           </span>
-          <div className="d-block mx-auto">
-            <div className="scroll-container mx-auto" onClick={() => scrollTo('#write_us')}>
+          <div className="d-block">
+            <div className="scroll-container ml-auto mx-md-auto mx-lg-auto" onClick={() => scrollTo('#write_us')}>
               <FiChevronsDown className="d-flex d-justify-content-center scroll-down text-center" />
             </div>
           </div>
@@ -104,7 +138,10 @@ className="solutions carousel">
                 Write us and we will get back to as soon as possible. Or call by the contacts provided on the right.
             </p>
 
-            <form method="post" action="#">
+            <form  
+              method="post" 
+              onSubmit={submitForm.bind}
+              action="https://formspree.io/p/1527181724469952462/f/contact">
 
             <div class="form-group">
                 <label for="nameInput">Name:</label>
@@ -127,7 +164,7 @@ className="solutions carousel">
 
               <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea class="form-control rounded-sm" id="messageTxtArea" placeholder="Tell us your thoughts…" rows="8"></textarea>
+                <textarea class="form-control rounded-sm" id="messageTxtArea" placeholder="Tell us your thoughts…" rows="8" name="message"></textarea>
               </div>
 
               <div className="d-flex justify-content-end">
@@ -143,6 +180,8 @@ className="solutions carousel">
 
 </Layout>
   )
+
+  
 }
 
 export default Contact;

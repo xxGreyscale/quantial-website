@@ -335,8 +335,8 @@ section.content {
 /* same with para-2 but with no justified words */
 .para-3 {
   font-size: 0.875rem !important;
-  text-justify: distribute;
-  text-align: start;
+  text-justify: inter-word;
+  text-align: justify;
   line-height: 1.6;
 }
 
@@ -811,6 +811,10 @@ button[type=submit] {
 
 
 @media only screen and (max-width: 480px) {
+  .contacts.scrolled {
+    color               : #fff;
+  }
+
   html {
     font-size: 100%;
   }

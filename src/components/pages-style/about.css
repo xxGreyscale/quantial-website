@@ -10,3 +10,10 @@
     height                  : 25rem;
     object-fit              : cover;
 }
+
+
+@media (max-width: 426px) {  
+    .about.carousel {
+        height: 100vh;
+    }
+}

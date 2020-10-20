@@ -1,6 +1,4 @@
 import React, { useState, useRef } from "react"
-import ReactDOM from 'react-dom';
-import { Link } from "gatsby"
 import "../components/pages-style/solutions.css"
 
 import Layout from "../components/layout"
@@ -15,6 +13,16 @@ const Solutions = () => {
   const solutionCarousel = useRef();
   // write our logic here
   const [quickNav,setQuickNav] = useState(false);
+  const [dNone,setNoDisplay] = useState(false);
+
+  const dontDisplay = () => {
+    if(window.scrollY >= 800 * window.innerHeight/100) {
+      setNoDisplay(true);
+    } else {
+      setNoDisplay(false);
+    }
+  }
+
   const changeQuickNavColor = () => {
     if(window.scrollY >= 60 * window.innerHeight/100) {
       setQuickNav(true);
@@ -22,7 +30,11 @@ const Solutions = () => {
       setQuickNav(false);
     }
   }
-  window.addEventListener('scroll', changeQuickNavColor)
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', changeQuickNavColor)
+    window.addEventListener('scroll', dontDisplay)
+
+  }
 
   return (
     <Layout>
@@ -32,7 +44,7 @@ const Solutions = () => {
       className="solutions carousel">
        <Container className="h-100 w-100">
        <div className="d-flex h-100 align-items-center">
-         <div className="d-block w-100">
+         <div className="d-block mt-5 mt-lg-0 w-100">
            <div className="row">
              <div className="col-12 col-lg">
                 <h1 className="my-0">
@@ -51,21 +63,22 @@ const Solutions = () => {
              <div className="col-12 col-lg">
              <div className="d-block d-lg-flex w-100 justify-content-end">
               <div className="d-block quick-nav-container text-left text-lg-right">
-              <span className={quickNav ? "secondary quick-nav title scrolled font-weight-normal": "secondary quick-nav title font-weight-normal"}>
+              <span className={dNone ? 'd-none': quickNav ? "secondary quick-nav title scrolled font-weight-normal": "secondary quick-nav title font-weight-normal"}>
                     Quick Nav:
                   </span>
                   <ul className="quick-nav mt-3">
-                    <li onClick={() => scrollTo('#s-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li onClick={() => scrollTo('#s-sol')}
+                        className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       security solutions
                     </li>
-                    <li onClick={() => scrollTo('#it-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li onClick={() => scrollTo('#it-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       managed it solutions
                     </li>
-                    <li onClick={() => scrollTo('#ns-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li onClick={() => scrollTo('#ns-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       network solutions
                     </li>
-                    <li onClick={() => scrollTo('#db-sol')} className={quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
-                      data backup &amp; recovery
+                    <li onClick={() => scrollTo('#db-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                          data backup &amp; recovery
                     </li>
   
                   </ul>
@@ -135,7 +148,7 @@ const Solutions = () => {
             </div>
             <Container>
               <div className="w-100 w-lg-63">
-                <p>
+                <p className="para-1">
                       
                   At Quantial, we have experience in providing implementation , support, managed, and fully outsourced security services to organisations.
                   We have deep and longstanding relationships with leaders in security technology and can offer a truly multi-vendor solution. Our expertise 

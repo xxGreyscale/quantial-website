@@ -145,6 +145,14 @@ li {
     margin-bottom               : 0rem !important;
 }
 
+
+@media (max-width: 426px) {  
+    .solutions.carousel {
+        height: 100vh;
+        min-height: 100vh;
+    }
+}
+
 @media (min-width: 992px) {
 
     #it-sol li.col, #db-sol li.col {

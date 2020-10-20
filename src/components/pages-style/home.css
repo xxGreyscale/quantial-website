@@ -196,6 +196,16 @@ button[type="button"] {
 }
 
 
+@media (max-width: 426px) {  
+    .home.carousel {
+        height: 100vh;
+    }
+
+    .sponsor-banner {
+        height: 20vh;
+    }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 992px) {  
     .w-lg-80 {
