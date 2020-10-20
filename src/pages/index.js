@@ -47,7 +47,7 @@ const IndexPage = () => (
          </p>
        </div>
        <div className="d-inline-block my-3 my-lg-5">
-       <button type="button" className="col-12 col-md-auto col-lg-auto btn btn-lg btn-outline-light text-white">
+       <button id="our_services" type="button" className="col-12 col-md-auto col-lg-auto btn btn-lg btn-outline-light text-white">
          OUR SERVICES
        </button>
 

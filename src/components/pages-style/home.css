@@ -49,7 +49,7 @@
     overflow-x: scroll;
 }
 
-button[type="button"] {
+button#our_services {
     border                  : 2px solid white !important;
     font-size               : 18px !important;
     font-weight             : 600 !important;
