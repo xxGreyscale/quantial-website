@@ -80,7 +80,7 @@ const About = () => (
             <div className="">
                 <div className="row">
                     <div className="col-12 col-md-12 col-lg-5">
-                        <img src={uniqueBoat} className="w-100 shadow-sm"/>
+                        <img src={uniqueBoat} alt="unique and leading boat" className="w-100 shadow-sm"/>
                     </div>
                     <div className="col-12 col-md-12 col-lg-7">
                         <div className="h-100 d-flex align-items-center">
@@ -97,7 +97,7 @@ const About = () => (
         <section className="content">
             <div className="d-block w-100 w-lg-80 mx-auto">
                 <h2 className="divider">
-                    About us
+                    Our mission
                 </h2>
                 <ol className="mt-4">
                     <li>

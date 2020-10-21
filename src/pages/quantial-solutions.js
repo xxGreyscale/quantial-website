@@ -67,17 +67,17 @@ const Solutions = () => {
                     Quick Nav:
                   </span>
                   <ul className="quick-nav mt-3">
-                    <li onClick={() => scrollTo('#s-sol')}
+                    <li aria-hidden="true" onClick={() => scrollTo('#s-sol')}
                         className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       security solutions
                     </li>
-                    <li onClick={() => scrollTo('#it-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li aria-hidden="true" onClick={() => scrollTo('#it-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       managed it solutions
                     </li>
-                    <li onClick={() => scrollTo('#ns-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li  aria-hidden="true" onClick={() => scrollTo('#ns-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                       network solutions
                     </li>
-                    <li onClick={() => scrollTo('#db-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
+                    <li aria-hidden="true" onClick={() => scrollTo('#db-sol')} className={dNone ? 'd-none': quickNav ? 'quick-nav item scrolled': 'quick-nav item'}>
                           data backup &amp; recovery
                     </li>
   

@@ -80,7 +80,7 @@ className="contacts carousel">
         <div className="d-block quick-nav-container text-left text-lg-right mt-4 mt-md-3 mt-lg-0">
         <span 
         className= 
-        {dNone ? 'd-none': contacts ? 'scrolled title font-weight-bold' : 'secondary quick-nav title font-weight-bold'}>
+        {dNone ? 'd-none': contacts ? 'contacts scrolled font-weight-bold' : 'secondary quick-nav title font-weight-bold'}>
             CONTACTS
             </span>
             <ul className={dNone ? 'd-lg-none': contacts ? 'mt-2 contacts scrolled' : 'mt-2 font-weight-normal' }>
@@ -97,10 +97,6 @@ className="contacts carousel">
                 EMAIL:<br />
                 INFO@QUANTIAL.SOLUTIONS
               </li>
-              <li style={{ gridGap: '0rem' }} className="my-1">
-                WEBSITE:<br />
-                WWW.QUANTIAL.SOLUTIONS
-              </li>
 
             </ul>
         </div>
@@ -112,11 +108,11 @@ className="contacts carousel">
   </div>
     <div id="scroll_button" className="d-block w-100">
         <div className="d-block" >
-          <span className="d-block text-right text-md-center text-lg-center scroll-label" onClick={() => scrollTo('#about_us')}>
+          <span className="d-block text-right text-md-center text-lg-center scroll-label" aria-hidden="true" onClick={() => scrollTo('#about_us')}>
             WRITE US
           </span>
           <div className="d-block">
-            <div className="scroll-container ml-auto mx-md-auto mx-lg-auto" onClick={() => scrollTo('#write_us')}>
+            <div className="scroll-container ml-auto mx-md-auto mx-lg-auto" aria-hidden="true" onClick={() => scrollTo('#write_us')}>
               <FiChevronsDown className="d-flex d-justify-content-center scroll-down text-center" />
             </div>
           </div>
@@ -144,27 +140,27 @@ className="contacts carousel">
               action="https://formspree.io/p/1527181724469952462/f/contact">
 
             <div class="form-group">
-                <label for="nameInput">Name:</label>
+                <label htmlFor="name">Name:</label>
                 <input type="text" class="form-control rounded-sm" name="name" id="name" aria-describedby="nameHelp" placeholder="full name" />
 
               </div>
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input type="email" class="form-control rounded-sm" name="email" id="email" aria-describedby="emailHelp" placeholder="email@email.com" />
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
               </div>
 
               <div class="form-group">
-                <label for="subjectInput">Subject:</label>
+                <label htmlFor="subject">Subject:</label>
                 <input type="text" class="form-control rounded-sm" name="subject" id="subject" placeholder="subject" aria-describedby="subjectHelp" />
 
               </div>
 
               <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control rounded-sm" id="messageTxtArea" placeholder="Tell us your thoughts…" rows="8" name="message"></textarea>
+                <label htmlFor="message">Message:</label>
+                <textarea class="form-control rounded-sm" id="message" placeholder="How may we help you?" rows="8" name="message"></textarea>
               </div>
 
               <div className="d-flex justify-content-end">

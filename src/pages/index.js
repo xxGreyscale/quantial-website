@@ -21,9 +21,6 @@ import Tanesco from '../images/client_logo/tanesco.png'
 import Bayport from '../images/client_logo/bayport.png'
 
 
-
-console.log(Logos);
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -60,11 +57,11 @@ const IndexPage = () => (
 
       <div id="scroll_button" className="d-block mx-auto w-100">
         <div className="d-block" >
-          <span tabIndex='0' role = "button" className="d-block text-center scroll-label" onClick={() => scrollTo('#about_us')}>
+          <span className="d-block text-center scroll-label" aria-hidden="true" onClick={() => scrollTo('#about_us')}>
             SCROLL DOWN
           </span>
           <div className="d-block mx-auto">
-            <div tabIndex='0' role = "button" className="scroll-container mx-auto" onClick={() => scrollTo('#about_us')}>
+            <div className="scroll-container mx-auto" aria-hidden="true" onClick={() => scrollTo('#about_us')}>
               <FiChevronsDown className="d-flex d-justify-content-center scroll-down text-center" />
             </div>
           </div>
@@ -74,7 +71,7 @@ const IndexPage = () => (
 
     </div>
     <div className="sponsor-banner">
-      <div className="w-100 w-lg-90 h-100 mx-auto mx-lg-auto px-md-2">
+      <div className="w-100 h-100 mx-auto px-md-2 px-lg-5">
         <div className="row mx-0 w-100 h-100">
           <div className="col-5 col-md-4 col-lg-3 h-100">
             <div className="w-100 h-100 d-flex align-items-center">
