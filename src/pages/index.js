@@ -28,7 +28,7 @@ const IndexPage = () => (
     className="home carousel">
      <Container className="h-100 w-100">
      <div className="d-flex h-100 align-items-center">
-       <div className="d-block mt-5 mt-lg-0 mt-md-0">
+       <div className="d-block mt-5 mt-lg-2 mt-md-2">
        <h1 className="my-0">
           Experienced.
         </h1>
@@ -38,19 +38,19 @@ const IndexPage = () => (
         <h1 className="m-0">
         Purpose-drived.
         </h1>
-       <div className="subtitle my-3">
+       <div className="subtitle my-2">
          <p className="pt-3">
            We bring <b>Proven, unique blend of business, quantitative and <br /> and technological skills</b> to the industry
          </p>
        </div>
-       <div className="d-inline-block my-3 my-lg-5">
-       <button id="our_services" type="button" className="col-12 col-md-auto col-lg-auto btn btn-lg btn-outline-light text-white">
+       <div className="d-inline-block my-3 my-lg-0">
+       <a id="our_services" href="/quantial-solutions/" type="button" className="col-12 col-md-auto col-lg-auto btn btn-lg btn-outline-light text-white">
          OUR SERVICES
-       </button>
+       </a>
 
-       <button type="button"  id="work_with_us" className="col-12 col-md-auto col-lg-auto btn btn-light btn-lg primary-color mx-md-3 mx-lg-3 my-3 my-md-0 my-lg-0">
+       <a type="button" href="/about/"  id="work_with_us" className="col-12 col-md-auto col-lg-auto btn btn-light btn-lg primary-color mx-md-3 mx-lg-3 my-3 my-md-0 my-lg-0">
          WORK WITH US
-       </button>
+       </a>
        </div>
        </div>
       </div>

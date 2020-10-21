@@ -49,11 +49,22 @@
     overflow-x: scroll;
 }
 
-button#our_services {
+a#our_services {
     border                  : 2px solid white !important;
-    font-size               : 18px !important;
-    font-weight             : 600 !important;
 }
+
+a#our_services:hover {
+    color                   : #333333 !important;
+    background-color        : #ffffff50;
+}
+
+a[type='button'] {
+    font-weight             : 600 !important;
+    border-radius           : .125rem !important;
+    font-size               : 1rem !important;
+}
+
+
 
 .home.carousel {
     background-image        : url('../../images/drives.jpg');
