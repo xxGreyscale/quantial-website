@@ -838,3 +838,13 @@ button[type=submit] {
     width: 100%;
   }
 }
+/* iphone xs */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      #scroll_button {
+        margin-top: -8rem !important;
+      }
+    
+    }

@@ -62,6 +62,9 @@ a[type='button'] {
     font-weight             : 600 !important;
     border-radius           : .125rem !important;
     font-size               : 1rem !important;
+    -webkit-appearance      : none;
+    -moz-appearance         : none;
+
 }
 
 
@@ -209,38 +212,38 @@ a[type='button'] {
 
 @media (max-width: 426px) {  
     .home.carousel {
-        height: 104vh;
+        height                  : 104vh;
     }
 
     .sponsor-banner {
-        height: fit-content;
+        height                  : fit-content;
     }
 
     .sponsor-banner img{
-        max-width: 240px;
-        max-height: 240px;
+        max-width               : 240px;
+        max-height              : 240px;
     }
 
     .banner-overflow {
-        overflow-x: scroll !important;
+        overflow-x              : scroll !important;
     }
 
     .sponsor-banner .see-all {
-        font-size: 1rem !important;
-        color: #cecece;
+        font-size               : 1rem !important;
+        color                   : #cecece;
 
     }
 
     .sponsor-banner svg {
-        stroke: #cecece;
-        width: 3em;
-        height: 2em;
+        stroke                  : #cecece;
+        width                   : 3em;
+        height                  : 2em;
     }
 
     .sponsors-logo img {
-        width: 120% !important;
-        display: block !important;
-        margin: 0rem !important;
+        width                   : 120% !important;
+        display                 : block !important;
+        margin                  : 0rem !important;
     }
 
     
