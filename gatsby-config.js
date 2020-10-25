@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Quantial Solutions`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A fully Tanzanian IT solutions provider with the vision of helping businesses use technology to effectively grow, manage, and protect their day-today operations.`,
     author: `@quantialSolutions`,
   },
   plugins: [
