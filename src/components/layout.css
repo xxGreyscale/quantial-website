@@ -779,7 +779,7 @@ pre tt:after {
 }
 
 #scroll_button {
-  margin-top: -6rem !important;
+  margin-top: -6rem;
 }
 
 label {
@@ -810,7 +810,18 @@ button[type=submit] {
 
 
 
+@media only screen and (max-height: 667px) {
+  #scroll_button {
+    margin-top: -5rem !important;
+  }
+}
+
+
 @media only screen and (max-width: 480px) {
+  #scroll_button {
+    margin-top: -8rem;
+  }
+
   .contacts.scrolled {
     color               : #fff;
   }

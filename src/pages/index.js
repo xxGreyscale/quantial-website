@@ -73,8 +73,8 @@ const IndexPage = () => (
     <div className="sponsor-banner">
       <div className="w-100 h-100 mx-auto px-md-2 px-lg-5">
         <div className="row mx-0 w-100 h-100">
-          <div className="col-5 col-md-4 col-lg-3 h-100">
-            <div className="w-100 h-100 d-flex align-items-center">
+          <div className="col-12 col-md-4 col-lg-3 h-100">
+            <div className="w-100 my-5 my-md-0 my-lg-0 h-100 d-flex align-items-center">
               <span className="mb-0 title">
                 WE HANDLE THEIR
                 IT SOLUTIONS, THEY 
@@ -83,18 +83,18 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="col-6 col-md-6 col-lg-7 overflow">
-            <div className="h-100 d-flex align-items-center">
-              <img src={Alaf} alt="alaf logo" className="my-0 mr-2 ml-4 d-inline"/>
-              <img src={Shanta} alt="alaf logo" className="col my-0 mx-3 px-4 d-inline"/>
-              <img src={Muhimbili} alt="alaf logo" className="col my-0 mx-3 px-4 d-inline"/>
-              <img src={Tanesco} alt="alaf logo" className="col my-0 mx-3 px-4 d-inline"/>
-              <img src={Bayport} alt="alaf logo" className="col my-0 ml-3 px-4 d-inline"/>
+          <div className="col-12 my-2 mb-4 my-md-0 my-lg-0 col-md-6 col-lg-7 banner-overflow">
+            <div className="h-100 d-flex align-items-center sponsors-logo">
+              <img src={Alaf} alt="alaf logo" className="col my-0 mr-2 ml-4 d-lg-inline"/>
+              <img src={Shanta} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
+              <img src={Muhimbili} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
+              <img src={Tanesco} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
+              <img src={Bayport} alt="alaf logo" className="col my-0 ml-3 px-4 d-lg-inline"/>
             </div>
           </div>
 
-          <div className="h-100 d-flex align-items-center justify-content-center col-2 col-md-2 see-all">
-              <FiChevronRight className="fi-icons" />
+          <div className="h-100 py-4 py-md-0 py-lg-0 mt-3 mt-md-0 mt-lg-0 d-flex align-items-center justify-content-center col-12 col-md-2 col-lg-2 see-all">
+              <FiChevronRight className="fi-icons d-lg-block" />
               <span className="ml-n2">
                 see all
               </span>

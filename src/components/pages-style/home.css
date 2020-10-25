@@ -45,7 +45,7 @@
     font-size               : .875rem;
 }
 
-.overflow {
+.banner-overflow {
     overflow-x: scroll;
 }
 
@@ -209,12 +209,41 @@ a[type='button'] {
 
 @media (max-width: 426px) {  
     .home.carousel {
-        height: 100vh;
+        height: 104vh;
     }
 
     .sponsor-banner {
-        height: 20vh;
+        height: fit-content;
     }
+
+    .sponsor-banner img{
+        max-width: 240px;
+        max-height: 240px;
+    }
+
+    .banner-overflow {
+        overflow-x: scroll !important;
+    }
+
+    .sponsor-banner .see-all {
+        font-size: 1rem !important;
+        color: #cecece;
+
+    }
+
+    .sponsor-banner svg {
+        stroke: #cecece;
+        width: 3em;
+        height: 2em;
+    }
+
+    .sponsors-logo img {
+        width: 120% !important;
+        display: block !important;
+        margin: 0rem !important;
+    }
+
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */

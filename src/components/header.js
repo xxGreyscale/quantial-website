@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
 
   return (<header
   >
-    <Navbar className={navbar ? 'navbar nav-scrolled' : 'navbar'} expand="lg" fixed="top">
+    <Navbar className={navbar ? 'navbar nav-scrolled' : 'navbar'} expand="md" fixed="top">
     <Container>
       <Navbar.Brand href="/">
         <img src={BrandLogo} alt="quantial white logo" height="60" className="m-0" />
