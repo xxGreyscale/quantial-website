@@ -40,6 +40,7 @@ body {
 
 
 .carousel {
+
   background-size         : cover;
   background-repeat       : no-repeat;
   background-blend-mode   : saturation;
@@ -779,7 +780,8 @@ pre tt:after {
 }
 
 #scroll_button {
-  margin-top: -6rem;
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 label {
@@ -809,17 +811,9 @@ button[type=submit] {
 }
 
 
-
-@media only screen and (max-height: 667px) {
-  #scroll_button {
-    margin-top: -5rem !important;
-  }
-}
-
-
 @media only screen and (max-width: 480px) {
   #scroll_button {
-    margin-top: -8rem;
+
   }
 
   .contacts.scrolled {
@@ -838,13 +832,27 @@ button[type=submit] {
     width: 100%;
   }
 }
-/* iphone xs */
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
+
+    /* landscape mobile */
+    @media only screen and (min-width : 320px) and (orientation : landscape) {
+      /* Styles */
       #scroll_button {
-        margin-top: -8rem !important;
-      }
-    
+        margin-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
     }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  /* Styles */
+      #scroll_button {
+        margin-top: -6rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+}
+  
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1824px) {
+  /* Styles */
+  }

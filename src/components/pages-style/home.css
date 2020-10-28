@@ -71,9 +71,13 @@ a[type='button'] {
 
 .home.carousel {
     background-image        : url('../../images/drives.jpg');
-    height                  : 85vh;
+    height                  : auto;
     width                   : 100%;
     color                   : #ffffff;
+}
+
+.carousel-content {
+    margin-top: 12rem;
 }
 
 .subtitle {
@@ -165,7 +169,8 @@ a[type='button'] {
 
 .sponsor-banner {
     width                   : 100%;
-    height                  : 15vh;
+    height                  : fit-content;
+    padding                 : 1.5rem 0rem;
     background-color        : #1D2429;
 }
 
@@ -190,34 +195,7 @@ a[type='button'] {
 
 }
 
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 768px) {  
-    .w-md-100 {
-        width                   : 100% !important;
-        max-width               : 100vw !important;
-    }
-
-    #vision_n_aim ol {
-        width                   : 75% !important;
-    }
-
-
-    .unique-value-img, .vision-img {
-        height                  : 624px;
-    }
-    
-}
-
-
 @media (max-width: 426px) {  
-    .home.carousel {
-        height                  : 104vh;
-    }
-
-    .sponsor-banner {
-        height                  : fit-content;
-    }
 
     .sponsor-banner img{
         max-width               : 240px;
@@ -249,7 +227,26 @@ a[type='button'] {
     
 }
 
+
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 768px) {  
+    .w-md-100 {
+        width                   : 100% !important;
+        max-width               : 100vw !important;
+    }
+
+    #vision_n_aim ol {
+        width                   : 75% !important;
+    }
+
+
+    .unique-value-img, .vision-img {
+        height                  : 624px;
+    }
+    
+}
+
+
 @media (min-width: 992px) {  
     .w-lg-80 {
         width                   : 80% !important;
@@ -270,3 +267,52 @@ a[type='button'] {
     }
     
 }
+
+
+    /* landscape mobile */
+@media only screen and (min-width : 320px) and (orientation : landscape) {
+        /* Styles */
+        .home {
+            height: fit-content !important;
+        }
+
+        .carousel-content {
+            margin-top: 8rem !important;
+        }
+
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    /* Styles */
+    .home.carousel {
+        height: 85vh !important;
+    }
+
+    .carousel-content {
+        margin-top: 1rem !important;
+    }
+
+    .sponsor-banner {
+        height: 15vh !important;
+    }
+}
+    
+    /* Large screens ----------- */
+    @media only screen  and (min-width : 1824px) {
+    /* Styles */
+
+    .home.carousel {
+        height: 80vh !important;
+    }
+
+    .carousel-content {
+        margin-top: 1rem !important;
+    }
+
+    .sponsor-banner {
+        height: fit-content !important;
+        padding: 1.5rem !important;
+    }
+    }

@@ -28,7 +28,7 @@ const IndexPage = () => (
     className="home carousel">
      <Container className="h-100 w-100">
      <div className="d-flex h-100 align-items-center">
-       <div className="d-block mt-5 mt-lg-2 mt-md-2">
+       <div className="d-block carousel-content">
        <h1 className="my-0">
           Experienced.
         </h1>
@@ -73,9 +73,9 @@ const IndexPage = () => (
     <div className="sponsor-banner">
       <div className="w-100 h-100 mx-auto px-md-2 px-lg-5">
         <div className="row mx-0 w-100 h-100">
-          <div className="col-12 col-md-4 col-lg-3 h-100">
-            <div className="w-100 my-5 my-md-0 my-lg-0 h-100 d-flex align-items-center">
-              <span className="mb-0 title">
+          <div className="col-12 col-md-4 col-lg-3 h-100 my-auto">
+            <div className="w-100 my-5 my-md-0 my-lg-0 h-100 d-lg-flex ">
+              <span className="my-auto title align-content-center">
                 WE HANDLE THEIR
                 IT SOLUTIONS, THEY 
                 CONCENTRATE ON BUSINESS:
@@ -83,7 +83,7 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="col-12 my-2 mb-4 my-md-0 my-lg-0 col-md-6 col-lg-7 banner-overflow">
+          <div className="col-12 my-2 mb-5 my-md-0 my-lg-0 col-md-7 col-lg-7 banner-overflow">
             <div className="h-100 d-flex align-items-center sponsors-logo">
               <img src={Alaf} alt="alaf logo" className="col my-0 mr-2 ml-4 d-lg-inline"/>
               <img src={Shanta} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
@@ -93,12 +93,12 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="h-100 py-4 py-md-0 py-lg-0 mt-3 mt-md-0 mt-lg-0 d-flex align-items-center justify-content-center col-12 col-md-2 col-lg-2 see-all">
-              <FiChevronRight className="fi-icons d-lg-block" />
-              <span className="ml-n2">
+          <div className="h-100 py-lg-0 my-auto col-12 col-md-1 col-lg-2 px-1 text-center text-md-right text-lg-right see-all">
+                <FiChevronRight className="fi-icons ml-auto d-lg-inline-block" />
+                <span className="ml-n2 d--inline-block">
                 see all
-              </span>
-              </div>
+                </span>
+          </div>
 
         </div>
       </div>
