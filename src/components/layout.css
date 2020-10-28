@@ -831,6 +831,10 @@ button[type=submit] {
   button[type=submit] {
     width: 100%;
   }
+
+  .carousel-content {
+    margin-top: 7rem !important;
+}
 }
 
     /* landscape mobile */

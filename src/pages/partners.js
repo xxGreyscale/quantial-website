@@ -14,7 +14,7 @@ const Partners = () => (
             <div className="partners carousel">
             <Container className="h-100 w-100">
                 <div className="d-flex h-100 align-items-center">
-                    <div className="d-block w-100">
+                    <div className="d-block pb-3 carousel-content w-100">
                         <div className="row">
                             <div className="col">
                                 <h1 className="my-0">

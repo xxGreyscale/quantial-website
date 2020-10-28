@@ -95,13 +95,13 @@ a[type='button'] {
     left                    : 0;
 }
 
-.sol-overview-bg {
+#solution_overview .sol-overview-bg {
     border-radius           : 1.875rem;
     height                  : 240px;
     margin-bottom           : 1.5rem;
 }
 
-.sol-overview-bg::after {
+#solution_overview .sol-overview-bg::after {
     display                 : block;
     position                : relative;
     content                 : '';
@@ -111,27 +111,27 @@ a[type='button'] {
     background-color        : #3A6380;
 }
 
-.unique-value-img, .vision-img, .s-sol-bg {
+ .unique-value-img,  .vision-img, .s-sol-bg {
     width                   : 100%;
     background-repeat       : no-repeat;
     background-size         : cover;
 }
 
-.unique-value-img, .vision-img {
+ .unique-value-img,  .vision-img {
     height                  : 420px;
 }
 
-.unique-value-img {
+ .unique-value-img {
     background-position     : 56%;
     background-image        : url('../../images/unique.jpg');
 }
 
-.vision-img {
+ .vision-img {
     background-position     : 75%;
     background-image        : url('../../images/vision.jpeg');
 }
 
-.s-sol-bg {
+#solution_overview .s-sol-bg {
     margin-bottom             : 1.5rem;
     background-position-y     : 60%;
     border-radius             : .175rem;
@@ -139,14 +139,14 @@ a[type='button'] {
     background-image          : url('../../images/security-locks.jpg');
 }
 
-.it-sol-bg {
+#solution_overview .it-sol-bg {
     margin-bottom             : 1.5rem;
     background-size           : contain;
     border-radius             : .175rem;
     background-image          : url('../../images/server-wires.jpg');
 }
 
-.dp-sol-bg {
+#solution_overview .dp-sol-bg {
     margin-bottom             : 1.5rem;
     background-size           : cover;
     border-radius             : .175rem;
@@ -154,7 +154,7 @@ a[type='button'] {
     background-image          : url('../../images/servers.jpg');
 }
 
-.ns-sol-bg {
+#solution_overview .ns-sol-bg {
     margin-bottom             : 1.5rem;
     background-size           : cover;
     background-position       : center;

@@ -60,7 +60,7 @@ const Contact = () => {
 className="contacts carousel">
 <Container className="h-100 w-100">
 <div className="d-flex h-100 align-items-center">
-  <div className="d-block w-100 mt-5 mt-md-0 mt-lg-0">
+  <div className="d-block pb-3 carousel-content w-100">
     <div className="row mt-5 mt-md-0 mt-lg-0">
       <div className="col-12 col-lg">
           <h1 className="my-0">
@@ -108,11 +108,11 @@ className="contacts carousel">
   </div>
     <div id="scroll_button" className="d-block w-100">
         <div className="d-block" >
-          <span className="d-block text-right text-md-center text-lg-center scroll-label" aria-hidden="true" onClick={() => scrollTo('#about_us')}>
+          <span className="d-block text-center text-md-center text-lg-center scroll-label" aria-hidden="true" onClick={() => scrollTo('#about_us')}>
             WRITE US
           </span>
           <div className="d-block">
-            <div className="scroll-container ml-auto mx-md-auto mx-lg-auto" aria-hidden="true" onClick={() => scrollTo('#write_us')}>
+            <div className="scroll-container mx-auto mx-md-auto mx-lg-auto" aria-hidden="true" onClick={() => scrollTo('#write_us')}>
               <FiChevronsDown className="d-flex d-justify-content-center scroll-down text-center" />
             </div>
           </div>

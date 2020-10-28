@@ -14,7 +14,7 @@ const About = () => (
         <div className="about carousel">
             <Container className="h-100 w-100">
             <div className="d-flex h-100 align-items-center">
-                <div className="d-block w-100">
+                <div className="d-block pb-3 w-100 carousel-content">
                     <div className="row">
                         <div className="col">
                             <h1 className="my-0">

@@ -52,7 +52,7 @@
 }
 
 
-.s-sol-bg {
+#s-sol .s-sol-bg {
     margin-bottom             : 1.5rem;
     background-position-y     : 60%;
     border-radius             : .175rem;
@@ -71,7 +71,7 @@
     font-family               : 'Bebas Neue', cursive !important;
 }
 
-.it-sol-bg {
+#it-sol .it-sol-bg {
     margin-bottom             : 1.5rem;
     background-size           : cover;
     border-radius             : .175rem;
@@ -93,7 +93,7 @@
     background-image          : url('../../images/servers.jpg');
 }
 
-.ns-sol-bg {
+#ns-sol .ns-sol-bg {
     margin-bottom             : 1.5rem;
     background-size           : cover;
     background-position       : center;
@@ -105,7 +105,7 @@
     background-image          : url('../../images/pins.jpg');
 }
 
-.ns-sol.headline {
+#ns-sol .ns-sol.headline {
     font-size                   : 2.5rem !important;
     margin-bottom               : 0 !important;
     font-weight                 : 700;

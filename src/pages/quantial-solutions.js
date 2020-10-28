@@ -44,7 +44,7 @@ const Solutions = () => {
       className="solutions carousel">
        <Container className="h-100 w-100">
        <div className="d-flex h-100 align-items-center">
-         <div className="d-block carousel-content">
+         <div className="d-block w-100 pb-3 carousel-content">
            <div className="row">
              <div className="col-12 col-lg">
                 <h1 className="my-0">

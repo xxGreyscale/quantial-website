@@ -1,6 +1,5 @@
 .about.carousel {
     background-image        : url('../../images/about-us.jpg');
-    height                  : 85vh;
     width                   : 100%;
     color                   : #ffffff;
 }
@@ -13,7 +12,5 @@
 
 
 @media (max-width: 426px) {  
-    .about.carousel {
-        height: 100vh;
-    }
+
 }
