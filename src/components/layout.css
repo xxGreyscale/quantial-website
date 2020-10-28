@@ -40,12 +40,12 @@ body {
 
 
 .carousel {
-
   background-size         : cover;
   background-repeat       : no-repeat;
   background-blend-mode   : saturation;
   box-shadow              :inset 0 0 0 2000px rgba(58, 99, 128, 0.9);
   background-position     : 50% 55%;
+  height                  : auto;
 }
 
 .carousel .description {
@@ -754,6 +754,10 @@ pre tt:after {
   content: "";
 }
 
+.carousel-content {
+  margin-top: 12rem;
+}
+
 .scroll-container {
   padding: .875rem .1rem;
   width: fit-content;
@@ -812,10 +816,6 @@ button[type=submit] {
 
 
 @media only screen and (max-width: 480px) {
-  #scroll_button {
-
-  }
-
   .contacts.scrolled {
     color               : #fff;
   }
@@ -836,23 +836,44 @@ button[type=submit] {
     /* landscape mobile */
     @media only screen and (min-width : 320px) and (orientation : landscape) {
       /* Styles */
+      .carousel {
+        height: fit-content !important;
+    }
+
       #scroll_button {
         margin-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
     }
+
+    .carousel-content {
+      margin-top: 8rem !important;
+  }
 }
 
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
   /* Styles */
-      #scroll_button {
+    .carousel {
+      height: 85vh !important;
+    }
+
+    #scroll_button {
         margin-top: -6rem !important;
         padding-bottom: 1.5rem !important;
     }
+
+
+    .carousel-content {
+      margin-top: 1rem !important;
+  }
 }
   
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
   /* Styles */
+  .carousel {
+    height: 80vh !important;
+}
+
   }

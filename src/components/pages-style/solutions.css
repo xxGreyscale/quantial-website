@@ -5,7 +5,6 @@
 
 .solutions.carousel {
     background-image        : url('../../images/vision.jpeg');
-    height                  : 85vh;
     width                   : 100%;
     color                   : #ffffff;
 }
@@ -145,13 +144,6 @@ li {
     margin-bottom               : 0rem !important;
 }
 
-
-@media (max-width: 426px) {  
-    .solutions.carousel {
-        height: 100vh;
-        min-height: 100vh;
-    }
-}
 
 @media (min-width: 992px) {
 

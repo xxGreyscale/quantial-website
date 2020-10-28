@@ -71,13 +71,8 @@ a[type='button'] {
 
 .home.carousel {
     background-image        : url('../../images/drives.jpg');
-    height                  : auto;
     width                   : 100%;
     color                   : #ffffff;
-}
-
-.carousel-content {
-    margin-top: 12rem;
 }
 
 .subtitle {
@@ -272,13 +267,6 @@ a[type='button'] {
     /* landscape mobile */
 @media only screen and (min-width : 320px) and (orientation : landscape) {
         /* Styles */
-        .home {
-            height: fit-content !important;
-        }
-
-        .carousel-content {
-            margin-top: 8rem !important;
-        }
 
 }
 
@@ -286,33 +274,17 @@ a[type='button'] {
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
     /* Styles */
-    .home.carousel {
-        height: 85vh !important;
-    }
-
-    .carousel-content {
-        margin-top: 1rem !important;
-    }
-
     .sponsor-banner {
         height: 15vh !important;
     }
 }
     
-    /* Large screens ----------- */
-    @media only screen  and (min-width : 1824px) {
-    /* Styles */
-
-    .home.carousel {
-        height: 80vh !important;
-    }
-
-    .carousel-content {
-        margin-top: 1rem !important;
-    }
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
 
     .sponsor-banner {
         height: fit-content !important;
         padding: 1.5rem !important;
     }
-    }
+}
