@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-layout',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

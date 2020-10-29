@@ -139,28 +139,28 @@ className="contacts carousel">
               onSubmit={submitForm.bind}
               action="https://formspree.io/p/1527181724469952462/f/contact">
 
-            <div class="form-group">
+            <div className="form-group">
                 <label htmlFor="name">Name:</label>
-                <input type="text" class="form-control rounded-sm" name="name" id="name" aria-describedby="nameHelp" placeholder="full name" />
+                <input type="text" className="form-control rounded-sm" name="name" id="name" aria-describedby="nameHelp" placeholder="full name" />
 
               </div>
 
-              <div class="form-group">
+              <div className="form-group">
                 <label htmlFor="email">Email:</label>
-                <input type="email" class="form-control rounded-sm" name="email" id="email" aria-describedby="emailHelp" placeholder="email@email.com" />
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <input type="email" className="form-control rounded-sm" name="email" id="email" aria-describedby="emailHelp" placeholder="email@email.com" />
+                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
 
               </div>
 
-              <div class="form-group">
+              <div className="form-group">
                 <label htmlFor="subject">Subject:</label>
-                <input type="text" class="form-control rounded-sm" name="subject" id="subject" placeholder="subject" aria-describedby="subjectHelp" />
+                <input type="text" className="form-control rounded-sm" name="subject" id="subject" placeholder="subject" aria-describedby="subjectHelp" />
 
               </div>
 
-              <div class="form-group">
+              <div className="form-group">
                 <label htmlFor="message">Message:</label>
-                <textarea class="form-control rounded-sm" id="message" placeholder="How may we help you?" rows="8" name="message"></textarea>
+                <textarea className="form-control rounded-sm" id="message" placeholder="How may we help you?" rows="8" name="message"></textarea>
               </div>
 
               <div className="d-flex justify-content-end">
