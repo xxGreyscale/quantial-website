@@ -1,7 +1,20 @@
 import React from "react";
+import Header from "../components/header"
+import { useStaticQuery, graphql } from "gatsby"
+
 import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions";
 
 const Layout = ({ location, children }) => {
+    const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <TransitionProvider
             location={location}
@@ -33,6 +46,8 @@ const Layout = ({ location, children }) => {
       <TransitionViews>
         {children}
       </TransitionViews>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+
     </TransitionProvider>
   );
 };

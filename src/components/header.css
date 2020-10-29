@@ -47,13 +47,14 @@ button.navbar-toggler {
     display                 : block;
     position                : relative;
     content                 : '';
-    height                  : .0175rem;
+    height                  : .1rem;
     width                   : 50%;
     bottom                  : 0;
     margin-top              : .5rem;
     margin-bottom           : .875rem;
     background-color        : #ffffff;
     left                    : 0;
+    border-radius           : .1rem;
 }
 
 .nav-item li a {
@@ -125,6 +126,20 @@ button.navbar-toggler {
 
     .navbar-collapse.collapse.show a.active::after {
         display: none;
+    }
+    
+    .navbar-collapse.collapse.show a.active::before {
+        display: block;
+        position: relative;
+        content: '';
+        height: .75rem;
+        width: .75rem;
+        bottom: -2.3rem;
+        margin-top: 0rem;
+        margin-bottom: .875rem;
+        background-color: #ffffff;
+        left: -1.5rem;
+        border-radius: 1.5rem;
     }
 
     .collapsing {
