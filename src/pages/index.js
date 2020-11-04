@@ -76,9 +76,7 @@ const IndexPage = () => (
           <div className="col-12 col-md-4 col-lg-3 h-100 my-auto">
             <div className="w-100 my-5 my-md-0 my-lg-0 h-100 d-lg-flex ">
               <span className="my-auto title align-content-center">
-                WE HANDLE THEIR
-                IT SOLUTIONS, THEY 
-                CONCENTRATE ON BUSINESS:
+                FOCUS ON YOUR BUSINESS. LET US HANDLE YOUR IT
               </span>
             </div>
           </div>
@@ -94,10 +92,12 @@ const IndexPage = () => (
           </div>
 
           <div className="h-100 py-lg-0 my-auto col-12 col-md-1 col-lg-2 px-1 text-center text-md-right text-lg-right see-all">
+          <div className="h-100 d-flex align-items-center sponsors-logo">
                 <FiChevronRight className="fi-icons ml-auto d-lg-inline-block" />
                 <span className="ml-n2 d--inline-block">
                 see all
                 </span>
+          </div>
           </div>
 
         </div>
@@ -353,7 +353,7 @@ const IndexPage = () => (
               technology partners
           </h2>
 
-          <div className="row w-100 mt-4">
+          <div className="row w-100 mt-4 justify-content-center">
           <Logos />
           </div>
         </div>

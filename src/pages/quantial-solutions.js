@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useEffect } from "react"
 import "../components/pages-style/solutions.css"
 
 import Layout from "../components/layout"
@@ -10,7 +10,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Solutions = () => {
 
-  const solutionCarousel = useRef();
+  const solutionCarousel = React.useRef(false);
   // write our logic here
   const [quickNav,setQuickNav] = useState(false);
   const [dNone,setNoDisplay] = useState(false);
@@ -33,8 +33,28 @@ const Solutions = () => {
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', changeQuickNavColor)
     window.addEventListener('scroll', dontDisplay)
-
   }
+
+  useEffect(
+    () => {
+      console.log("effect");
+    },
+    [dNone, quickNav]
+  );
+
+  useEffect(() => {
+    if(solutionCarousel.current) {
+      setQuickNav(false);
+      setNoDisplay(false);
+    }
+    console.log("clean up");
+    return () => { // ComponentWillUnmount in Class Component
+      setQuickNav(false);
+      setNoDisplay(false);
+      solutionCarousel.current = false;
+    }
+  }, []);
+
 
   return (
     <Layout>

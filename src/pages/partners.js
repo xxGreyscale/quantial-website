@@ -18,14 +18,11 @@ const Partners = () => (
                         <div className="row">
                             <div className="col">
                                 <h1 className="my-0">
-                                OUR clients &amp;
-                                </h1>
-                                <h1 className="m-0">
-                                    PARTNERS
+                                OUR <br /> PARTNERS
                                 </h1>
                                 <div className="subtitle my-3">
                                 <p className="pt-3 description">
-                                    Experts with passion and knowledge<br />
+                                    Experts with passion and <br /> knowledge
                                     of the industry
                                 </p>
                                 </div>

@@ -11,6 +11,8 @@ import BrandLogo from "../images/assets/quantial-white-sm.png";
 
 const Header = ({ siteTitle }) => {
 
+  const [expanded, setExpanded] = useState(false);
+
   const [navbar,setNavbar] = useState(false);
   const changeBackground = () => {
     if(window.scrollY >= 90) {
@@ -26,32 +28,32 @@ const Header = ({ siteTitle }) => {
 
   return (<header
   >
-    <Navbar className={navbar ? 'navbar nav-scrolled' : 'navbar'} expand="md" fixed="top">
+    <Navbar className={navbar ? 'navbar nav-scrolled' : 'navbar'} expand="md" fixed="top" expanded={expanded}>
     <Container>
       <Navbar.Brand href="/">
         <img src={BrandLogo} alt="quantial white logo" height="60" className="m-0" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto" activeKey="/home">
         <Nav.Item>
           <Nav.Link as='li'>
-          <Link activeClassName="active" to="/quantial-solutions/">Solutions</Link>      
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/quantial-solutions/">Solutions</Link>      
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-1" as='li'>
-          <Link activeClassName="active" to="/about/">About</Link>
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/about/">About</Link>
             </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-2" as='li'>
-          <Link activeClassName="active" to="/partners/">Partners</Link>
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/partners/">Partners</Link>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="disabled" as='li'>
-          <Link activeClassName="active" to="/contact/">Contact Us</Link>
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/contact/">Contact Us</Link>
           </Nav.Link>
         </Nav.Item>
       </Nav>

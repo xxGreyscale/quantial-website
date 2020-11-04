@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/layout";
 import { Container } from "react-bootstrap"
 import SEO from "../components/seo"
@@ -52,6 +52,21 @@ const Contact = () => {
     window.addEventListener('scroll', dontDisplay)
 
   }
+
+  useEffect(
+    () => {
+      console.log("effect");
+    },
+    [dNone, contacts]
+  );
+
+  useEffect(() => {
+    return () => { // ComponentWillUnmount in Class Component
+      console.log("clean up");
+    }
+  }, []);
+
+  
   return (
     <Layout>
     <SEO title="Contact Us" />
@@ -95,7 +110,7 @@ className="contacts carousel">
               </li>
               <li style={{ gridGap: '0rem' }} className="my-1">
                 EMAIL:<br />
-                INFO@QUANTIAL.SOLUTIONS
+                info@quantial.solutions
               </li>
 
             </ul>
