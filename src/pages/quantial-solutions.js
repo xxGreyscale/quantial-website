@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useLayoutEffect, useEffect } from "react"
 import "../components/pages-style/solutions.css"
 
 import Layout from "../components/layout"
@@ -9,6 +9,23 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const Solutions = () => {
+
+  const useScrollTo = id => {
+    useLayoutEffect(() => {
+      if (id) {
+        const el = document.getElementById(id)
+        const top = window.scrollY + el.getBoundingClientRect().top
+        window.scrollTo({ top, behavior: "smooth" })
+      }
+    }, [id])
+  }
+
+
+  
+  // window.setTimeout(
+  //   useScrollTo(targetFragment),
+  //   100
+  // )
 
   const solutionCarousel = React.useRef(false);
   // write our logic here
@@ -30,14 +47,41 @@ const Solutions = () => {
       setQuickNav(false);
     }
   }
+
+  const scrollToContent = () => {
+    if (typeof window !== 'undefined') {
+      const hashtag = window.location.hash
+      if (hashtag) {
+        const currentURL = window.location.href
+        const newURL = currentURL.split("#")[0]
+        const id = currentURL.split("#")[1]
+        if (id) {
+          const el = document.getElementById(id)
+          if(el) {
+            const top =  el.getBoundingClientRect().top
+            scrollTo('#' + id);
+            window.scrollTo({ top, behavior: "smooth" })
+          }
+        }
+        // window.history.replaceState("", "Lunch", newURL)
+      }
+    }
+  }
+
+
   if (typeof window !== 'undefined') {
+    window.addEventListener('DOMContentLoaded', scrollToContent)
     window.addEventListener('scroll', changeQuickNavColor)
     window.addEventListener('scroll', dontDisplay)
   }
 
+  // if(document.onready()) {
+  //   const solnPage = document.getElementById("quantial_solutions_view");
+  //   console.log(solnPage)
+  // }
+
   useEffect(
     () => {
-      console.log("effect");
     },
     [dNone, quickNav]
   );
@@ -47,7 +91,6 @@ const Solutions = () => {
       setQuickNav(false);
       setNoDisplay(false);
     }
-    console.log("clean up");
     return () => { // ComponentWillUnmount in Class Component
       setQuickNav(false);
       setNoDisplay(false);
@@ -57,10 +100,10 @@ const Solutions = () => {
 
 
   return (
-    <Layout>
+    <Layout >
           <SEO title="Our Solutions" />
   
-          <div ref={solutionCarousel}
+          <div onLoad={scrollToContent()} id="quantial_solutions" ref={solutionCarousel}
       className="solutions carousel">
        <Container className="h-100 w-100">
        <div className="d-flex h-100 align-items-center">
@@ -303,7 +346,7 @@ const Solutions = () => {
           <section id="ns-sol" className="content">
             <Container>
             <h2 className="divider mb-4">
-              network solutions
+                network solutions
             </h2>
             </Container>
             <div className="solution-content">

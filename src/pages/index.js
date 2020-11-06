@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import "../components/pages-style/home.css"
+import { Link } from "gatsby"
+
 import { Container } from "react-bootstrap"
 
 import { FiChevronRight } from "react-icons/fi";
@@ -288,7 +290,11 @@ const IndexPage = () => (
 
                     <p className="para-1">
                       We optimise your connectivity in a way that matches your budget and makes the most business sense for
-                      you. Read more…
+                      you. <a
+                          href="/quantial-solutions/#ns-sol"
+                          >Read more…
+                        </a>
+
                     </p>
                   </div>
               </div>

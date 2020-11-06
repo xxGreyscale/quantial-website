@@ -42,7 +42,7 @@ const Partners = () => (
               technology partners
           </h2>
 
-          <div className="row w-100 ml-lg-n4 ml-md-0 ml-n2 mt-4">
+          <div className="row w-100 ml-lg-n4 ml-md-0 ml-n2 mt-4 justify-content-center">
           <Logos />
           </div>
         </div>

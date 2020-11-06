@@ -141,8 +141,10 @@ h6::after {
 }
 
 /* Overides */
-li {
-    margin-bottom               : 0rem !important;
+
+.quick-nav li {
+    grid-gap                    : 0em;
+    margin-bottom               : 0rem;
 }
 
 

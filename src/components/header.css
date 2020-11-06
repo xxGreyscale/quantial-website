@@ -43,7 +43,7 @@ button.navbar-toggler {
     opacity                 : 1 !important;
 }
 
-.active::after {
+.navbar-collapse.collapse .active::after {
     display                 : block;
     position                : relative;
     content                 : '';
