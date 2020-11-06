@@ -37,7 +37,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby build && firebase deploy",
-    "cp-deploy": "gatsby build && git add . && git commit -m 'Deploy build' && git push cpanel master",
+    "cp-deploy": "gatsby build && git add . && git commit -m 'Deploy build' && git push origin master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

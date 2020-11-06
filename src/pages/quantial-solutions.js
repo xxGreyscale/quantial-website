@@ -58,12 +58,12 @@ const Solutions = () => {
         if (id) {
           const el = document.getElementById(id)
           if(el) {
-            const top =  el.getBoundingClientRect().top
+            const top =  window.scrollY + el.getBoundingClientRect().top
             scrollTo('#' + id);
             window.scrollTo({ top, behavior: "smooth" })
           }
         }
-        // window.history.replaceState("", "Lunch", newURL)
+        window.history.replaceState("", "Lunch", newURL)
       }
     }
   }
