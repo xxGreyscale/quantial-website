@@ -38,22 +38,22 @@ const Header = ({ siteTitle }) => {
         <Nav className="ml-auto" activeKey="/home">
         <Nav.Item>
           <Nav.Link as='li'>
-          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/quantial-solutions/">Solutions</Link>      
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 150)} activeClassName="active" to="/quantial-solutions/">Solutions</Link>      
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-1" as='li'>
-          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/about/">About</Link>
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 150)} activeClassName="active" to="/about/">About</Link>
             </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-2" as='li'>
-          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/partners/">Partners</Link>
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 150)} activeClassName="active" to="/partners/">Partners</Link>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="disabled" as='li'>
-          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 300)} activeClassName="active" to="/contact/">Contact Us</Link>
+          <Link onClick={() => setTimeout(() => {setExpanded(false)}, 150)} activeClassName="active" to="/contact/">Contact Us</Link>
           </Nav.Link>
         </Nav.Item>
       </Nav>
