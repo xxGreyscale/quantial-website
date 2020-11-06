@@ -234,7 +234,10 @@ const IndexPage = () => (
 
                     <p className="para-1">
                       From assessment, support and IT consulting to process improvement, 
-                      training and implementation, our security services bring you the best services to counter cyber attack and data breaches.
+                      training and implementation, our security services bring you the best services to counter cyber attack and data breaches.<a
+                          href="/quantial-solutions/#s-sol"
+                          >read more…
+                        </a>
                     </p>
                   </div>
 
@@ -254,7 +257,10 @@ const IndexPage = () => (
 
                     <p className="para-1">
                     An efficient way to stay up to date on technology, have access to 
-                    necessary skills and address a range of issues related to cost, quality of service and risk.
+                    necessary skills and address a range of issues related to cost, quality of service and risk.<a
+                          href="/quantial-solutions/#it-sol"
+                          >read more…
+                        </a>
                     </p>
                   </div>
 
@@ -273,7 +279,10 @@ const IndexPage = () => (
 
                     <p className="para-1">
                       We help you establish a holistic view of your sensitive
-                      data, helping you avoid data leaks and minimise the risk of compromisation or loss
+                      data, helping you avoid data leaks and minimise the risk of compromisation or loss <a
+                          href="/quantial-solutions/#db-sol"
+                          >read more…
+                        </a>
                     </p>
                   </div>
               </div>
@@ -292,7 +301,7 @@ const IndexPage = () => (
                       We optimise your connectivity in a way that matches your budget and makes the most business sense for
                       you. <a
                           href="/quantial-solutions/#ns-sol"
-                          >Read more…
+                          >read more…
                         </a>
 
                     </p>
