@@ -31,14 +31,14 @@ const Footer = () => {
                    <div className="col-12 col-md col-lg">
                     © {new Date().getFullYear()}, Quantial Technology solutions.  All Rights Reserved.
                    </div>
-                   <div className="col-12 col-md col-lg ml-lg-auto text-lg-right p-lg-0 mt-2 mt-md-0 mt-lg-0">
+                   {/* <div className="col-12 col-md col-lg ml-lg-auto text-lg-right p-lg-0 mt-2 mt-md-0 mt-lg-0">
                        <p className="d-inline mx-lg-4">
                            Privacy Policy
                        </p>
                        <p className="d-inline ml-4">
                            Terms of Service
                        </p>
-                   </div>
+                   </div> */}
                    </div>
 
                </div>

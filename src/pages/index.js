@@ -51,7 +51,7 @@ const IndexPage = () => (
          OUR SERVICES
         </button>
          </a>
-         <a href="/about/">
+         <a href="/contact/">
        <button type="button"  id="work_with_us" className="col-12 col-md-auto col-lg-auto btn btn-light btn-lg primary-color mx-md-3 mx-lg-3 my-3 my-md-0 my-lg-0">
          WORK WITH US
        </button>
