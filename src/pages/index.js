@@ -237,7 +237,7 @@ const IndexPage = () => (
 
                     <p className="para-1">
                       From assessment, support and IT consulting to process improvement, 
-                      training and implementation, our security services bring you the best services to counter cyber attack and data breaches.<a
+                      training and implementation, our security services bring you the best services to counter cyber attack and data breaches. <a
                           href="/quantial-solutions/#s-sol"
                           >read more…
                         </a>
@@ -260,7 +260,7 @@ const IndexPage = () => (
 
                     <p className="para-1">
                     An efficient way to stay up to date on technology, have access to 
-                    necessary skills and address a range of issues related to cost, quality of service and risk.<a
+                    necessary skills and address a range of issues related to cost, quality of service and risk. <a
                           href="/quantial-solutions/#it-sol"
                           >read more…
                         </a>
@@ -282,7 +282,7 @@ const IndexPage = () => (
 
                     <p className="para-1">
                       We help you establish a holistic view of your sensitive
-                      data, helping you avoid data leaks and minimise the risk of compromisation or loss <a
+                      data, helping you avoid data leaks and minimise the risk of compromisation or loss. <a
                           href="/quantial-solutions/#db-sol"
                           >read more…
                         </a>
