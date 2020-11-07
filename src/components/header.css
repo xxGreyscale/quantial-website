@@ -59,11 +59,11 @@ button.navbar-toggler {
 
 .nav-item li a {
     font-family             : 'Montserrat', sans-serif;
-    font-size               : .85rem;
+    font-size               : .9rem;
     font-weight             : 600 !important;
     text-decoration         : none;
     color                   : #ffffff;
-    opacity                 : .8;
+    opacity                 : .9;
     text-transform          : uppercase !important;
 }
 
