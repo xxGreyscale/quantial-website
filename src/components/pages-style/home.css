@@ -49,16 +49,16 @@
     overflow-x: scroll;
 }
 
-a#our_services {
+button#our_services {
     border                  : 2px solid white !important;
 }
 
-a#our_services:hover {
-    color                   : #333333 !important;
-    background-color        : #ffffff50;
+button#our_services:hover {
+    color                   : #ffffff;
+    background-color        : #ffffff1f;
 }
 
-a[type='button'] {
+button[type='button'] {
     font-weight             : 600 !important;
     border-radius           : .125rem !important;
     font-size               : 1rem !important;

@@ -46,13 +46,16 @@ const IndexPage = () => (
          </p>
        </div>
        <div className="d-inline-block my-3 my-lg-0">
-       <a id="our_services" href="/quantial-solutions/" type="button" className="col-12 col-md-auto col-lg-auto btn btn-lg btn-outline-light text-white">
+       <a href="/quantial-solutions/">
+         <button id="our_services" type="button" className="col-12 col-md-auto col-lg-auto btn btn-lg btn-outline-light text-white">
          OUR SERVICES
-       </a>
-
-       <a type="button" href="/about/"  id="work_with_us" className="col-12 col-md-auto col-lg-auto btn btn-light btn-lg primary-color mx-md-3 mx-lg-3 my-3 my-md-0 my-lg-0">
+        </button>
+         </a>
+         <a href="/about/">
+       <button type="button"  id="work_with_us" className="col-12 col-md-auto col-lg-auto btn btn-light btn-lg primary-color mx-md-3 mx-lg-3 my-3 my-md-0 my-lg-0">
          WORK WITH US
-       </a>
+       </button>
+         </a>
        </div>
        </div>
       </div>
