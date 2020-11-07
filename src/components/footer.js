@@ -26,13 +26,13 @@ const Footer = () => {
               </div>
               </Container>
            <div className="bg-light py-3">
-               <Container className="w-100">
+               <div className="container-lg w-100">
                    <div className="row font-weight-bold w-100" style={{fontSize: '0.725rem'}}>
-                   <div className="col">
+                   <div className="col-12 col-md col-lg">
                     © {new Date().getFullYear()}, Quantial Technology solutions.  All Rights Reserved.
                    </div>
-                   <div className="col ml-auto text-right p-0">
-                       <p className="d-inline mx-4">
+                   <div className="col-12 col-md col-lg ml-lg-auto text-lg-right p-lg-0 mt-2 mt-md-0 mt-lg-0">
+                       <p className="d-inline mx-lg-4">
                            Privacy Policy
                        </p>
                        <p className="d-inline ml-4">
@@ -41,7 +41,7 @@ const Footer = () => {
                    </div>
                    </div>
 
-               </Container>
+               </div>
            </div>
           </footer>
 
