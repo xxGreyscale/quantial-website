@@ -43,11 +43,24 @@
 .sponsor-banner .see-all {
     color                   : #666666;
     font-size               : .875rem;
+    width                   : auto;
+    cursor                  : pointer;
+}
+
+.sponsor-banner .see-all:hover {
+    color                   : #999999;
+    stroke                  : #999999 !important;
 }
 
 .banner-overflow {
     overflow-x: scroll;
+    -ms-overflow-style      : none !important;  /* IE and Edge */
+    scrollbar-width         : none !important;  /* Firefox */
 }
+
+.banner-overflow::-webkit-scrollbar {
+    display: none;
+  }
 
 button#our_services {
     border                  : 2px solid white !important;
@@ -164,7 +177,7 @@ button[type='button'] {
 
 .sponsor-banner {
     width                   : 100%;
-    height                  : fit-content;
+    height                  : auto;
     padding                 : 1.5rem 0rem;
     background-color        : #1D2429;
 }
@@ -199,11 +212,13 @@ button[type='button'] {
 
     .banner-overflow {
         overflow-x              : scroll !important;
+        height                  : fit-content;
     }
 
     .sponsor-banner .see-all {
         font-size               : 1rem !important;
         color                   : #cecece;
+        width                   : 100%;
 
     }
 
