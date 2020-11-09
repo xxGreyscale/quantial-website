@@ -36,8 +36,14 @@
 }
 
 .sponsor-banner img {
-    max-width               : 160px;
-    max-height              : 160px;
+
+    max-width               : 176px;
+    max-height              : 176px;
+}
+
+img[alt="lo logo"], img[alt="aar logo"], img[alt="mcl logo"] {
+    width                   : 120px;
+    max-width               : 120px !important;
 }
 
 .sponsor-banner .see-all {

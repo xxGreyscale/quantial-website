@@ -3,8 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import "../components/pages-style/home.css"
-import { Link } from "gatsby"
-
 import { Container } from "react-bootstrap"
 
 import { FiChevronRight } from "react-icons/fi";
@@ -21,6 +19,9 @@ import Shanta from '../images/client_logo/shantagold.png'
 import Muhimbili from '../images/client_logo/muhimbili.png'
 import Tanesco from '../images/client_logo/tanesco.png'
 import Bayport from '../images/client_logo/bayport.png'
+import Aar from '../images/client_logo/Aar.png'
+import Mcl from '../images/client_logo/mcl-small.png'
+import Lologo from '../images/client_logo/lolgo.png'
 
 
 const IndexPage = () => {
@@ -29,9 +30,10 @@ const IndexPage = () => {
   const smoothScrollLeft = (element, distance) => {
     scrollLeftDistance += distance;
     element.scroll({left: scrollLeftDistance, behavior: "smooth"});
-    if(element.scrollLeft === element.getBoundingClientRect().right) {
-      scrollLeftDistance = 0;
-    }
+    // if(element.scrollLeft === element.getBoundingClientRect().right) {
+    //   element.scroll({right: element.getBoundingClientRect().right, behavior: "smooth"});
+    //   scrollLeftDistance = element.getBoundingClientRect().right - scrollLeftDistance;
+    // }
   }
 
   const onSeeMore = () => {
@@ -111,10 +113,14 @@ const IndexPage = () => {
                 <img src={Muhimbili} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
                 <img src={Tanesco} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
                 <img src={Bayport} alt="alaf logo" className="col my-0 ml-3 px-4 d-lg-inline"/>
+                <img src={Aar} alt="aar logo" height="60" className="col my-0 mx-3 px-4 d-lg-inline"/>
+                <img src={Mcl} alt="mcl logo" height="60" className="col my-0 mx-3 px-4 d-lg-inline"/>
+                <img src={Lologo} alt="lo logo" height="60" className="col my-0 mx-3 px-4 d-lg-inline"/>
+
               </div>
 
               <div className="h-100 my-3 my-md-auto my-lg-auto text-center text-md-right text-lg-right d-inline-flex see-all">
-              <div onClick={onSeeMore} className="h-100 d-flex ml-md-2 ml-lg-4 my-auto align-items-center sponsors-logo">
+              <div aria-hidden="true" onClick={onSeeMore} className="h-100 d-flex ml-md-2 ml-lg-4 my-auto align-items-center sponsors-logo">
                   <FiChevronRight className="fi-icons ml-auto d-lg-inline-block" />
                   <span className="ml-n2 d--inline-block">
                   see all
