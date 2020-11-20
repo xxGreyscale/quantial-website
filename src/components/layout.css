@@ -19,13 +19,16 @@ html {
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em sans-serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
 }
 body {
   margin: 0;
+  overflow-y: scroll !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: 'Montserrat', sans-serif !important;
   font-weight: normal;
