@@ -45,9 +45,9 @@ const Layout = ({ location, children }) => {
                 duration: 100
                 }
             }}>
-      <TransitionViews>
+      {/* <TransitionViews> */}
         {children}
-      </TransitionViews>
+      {/* </TransitionViews> */}
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
     </TransitionProvider>
