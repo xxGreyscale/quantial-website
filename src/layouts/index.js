@@ -1,57 +1,49 @@
-import React from "react";
-import Header from "../components/header"
-import { useStaticQuery, graphql } from "gatsby"
-import "./view.css"
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
 
+import React from "react"
+import PropTypes from "prop-types"
 
-import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions";
+import Footer from '../components/footer'
+import { StaticQuery, graphql } from "gatsby"
+import Header from '../components/header'
 
-const Layout = ({ location, children }) => {
-    const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+import Transition from '../components/transition'
+import "./layout.css"
+
+const Layout = ({ children, location }) => (
+  <StaticQuery
+    query={graphql`query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
         }
-      }
-    }
-  `)
+      }`}
+    render={data => (
+      <>
+        {/* <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            margin: `0 auto`,
+          }}
+        > */}
+        <Transition location = {location}>
+          {children}
+        </Transition>
+        {/* </div>
+        <Footer /> */}
+      </>
+    )}
+  />
+)
 
-  return (
-    <TransitionProvider
-            location={location}
-            mode="immediate"
-            enter={{
-                opacity: 0,
-                // transform: "translate3d(0,20vh,0) scale3d(1, 1, 1) rotate(0deg)",
-                config: {
-                mass: 1,
-                tension: 210,
-                friction: 20,
-                clamp: true
-                },
-                onRest: () => {
-                console.log("Hello, World!");
-                }
-            }}
-            usual={{
-                opacity: 1,
-                // transform: "translate3d(0vh,0vh,0) scale3d(1, 1, 1) rotate(0deg)"
-            }}
-            leave={{
-                opacity: 0,
-                // transform: "translate3d(0vh,0vh,0) scale3d(2, 1, 1) rotate(0deg)",
-                config: {
-                duration: 100
-                }
-            }}>
-      {/* <TransitionViews> */}
-        {children}
-      {/* </TransitionViews> */}
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
-    </TransitionProvider>
-  );
-};
-
-export default Layout;
+export default Layout

@@ -1,14 +1,15 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import Layout from "../components/layout"
+
 import SEO from "../components/seo"
 import "../components/pages-style/partners.css"
+import "../layouts/layout.css"
 import Logos from "../components/logos"
 
 
 
 const Partners = () => (
-    <Layout>
+    <div>
             <SEO title="Partners" />
 
             <div className="partners carousel">
@@ -49,7 +50,7 @@ const Partners = () => (
       </Container>
     </section>
     
-    </Layout>
+    </div>
 
 )
 

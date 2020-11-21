@@ -1,15 +1,15 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import Layout from "../components/layout"
 import "../components/pages-style/about.css"
 import uniqueBoat from "../images/unique-boats.jpg"
 import SEO from "../components/seo"
+import "../layouts/layout.css"
 
 
 
 
 const About = () => (
-    <Layout>
+    <div>
             <SEO title="About us" />
         <div className="about carousel">
             <Container className="h-100 w-100">
@@ -120,7 +120,7 @@ const About = () => (
     </section>
     
 
-    </Layout>
+    </div>
 )
 
 export default About

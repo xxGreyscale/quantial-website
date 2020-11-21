@@ -9,7 +9,6 @@ import { FiChevronRight } from "react-icons/fi";
 import { FiChevronsDown } from "react-icons/fi";
 
 
-import Layout from "../components/layout"
 import Logos from "../components/logos"
 import SEO from "../components/seo"
 import HumanResources from '../images/assets/humanresources.png'
@@ -22,6 +21,7 @@ import Bayport from '../images/client_logo/bayport.png'
 import Aar from '../images/client_logo/Aar.png'
 import Mcl from '../images/client_logo/mcl-small.png'
 import Lologo from '../images/client_logo/lolgo.png'
+import "../layouts/layout.css"
 
 
 const IndexPage = () => {
@@ -44,7 +44,7 @@ const IndexPage = () => {
   }
 
   return (
-    <Layout>
+    <div>
       <SEO title="Home" />
       <div
       className="home carousel">
@@ -406,7 +406,7 @@ const IndexPage = () => {
         </Container>
       </section>
       
-    </Layout>
+    </div>
   )
 }
 

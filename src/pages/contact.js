@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
-import Layout from "../components/layout";
 import { Container } from "react-bootstrap"
 import SEO from "../components/seo"
 import "../components/pages-style/contacts.css"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { FiChevronsDown } from "react-icons/fi";
+import "../layouts/layout.css"
 
 
 const submitForm = (ev) => {
@@ -68,7 +68,7 @@ const Contact = () => {
 
   
   return (
-    <Layout>
+    <div>
     <SEO title="Contact Us" />
 
 <div
@@ -189,7 +189,7 @@ className="contacts carousel">
     </Container>
 </section>
 
-</Layout>
+</div>
   )
 
   
