@@ -113,10 +113,10 @@ button.navbar-toggler {
     }
 
     
-    .navbar-collapse.collapse:not(.show) li {
+    /* .navbar-collapse.collapse:not(.show) li {
         opacity: 0;
         transition: opacity 1s ease-in-out !important;
-    }
+    } */
 
     .navbar-collapse.collapse.show li {
         opacity: 1;
