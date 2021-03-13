@@ -107,7 +107,7 @@ const IndexPage = () => {
             </div>
   
             <div className="col-12 my-2 mb-5 my-md-0 my-lg-0 col-md-8 col-lg-9 ">
-              <div id="client_logos" className="d-inline-flex w-100 w-md-75 w-lg-85 align-items-center sponsors-logo banner-overflow">
+              <div id="client_logos" className="d-inline-flex align-items-center sponsors-logo banner-overflow">
                 <img src={Alaf} alt="alaf logo" className="col my-0 mr-2 ml-0 d-lg-inline"/>
                 <img src={Shanta} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
                 <img src={Muhimbili} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>

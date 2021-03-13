@@ -145,7 +145,7 @@ h1 {
   margin-bottom: 1.45rem;
   color: inherit;
   font-family: 'Bebas Neue', cursive;
-  font-weight: bold;
+  font-weight: 700 !important;
   text-rendering: optimizeLegibility;
   font-size: 3rem !important;
   line-height: 1.1;
@@ -867,7 +867,8 @@ button[type=submit] {
 @media only screen  and (min-width : 1224px) {
   /* Styles */
     .carousel {
-      height: 85vh !important;
+      height: fit-content !important;
+      padding: 8rem 0rem 0rem 0rem;
     }
 
     .w-lg-80 {
@@ -880,8 +881,8 @@ button[type=submit] {
 
 
     #scroll_button {
-        margin-top: -6rem !important;
-        padding-bottom: 1.5rem !important;
+        margin-top: 3rem !important;
+        padding-bottom: 2.5rem !important;
     }
 
 
@@ -893,9 +894,6 @@ button[type=submit] {
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
   /* Styles */
-  .carousel {
-    height: 80vh !important;
-  }
 
   .w-lg-80 {
     width: 80% !important;

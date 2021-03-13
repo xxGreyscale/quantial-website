@@ -184,7 +184,7 @@ button[type='button'] {
 .sponsor-banner {
     width                   : 100%;
     height                  : auto;
-    padding                 : 1.5rem 0rem;
+    padding                 : 2rem 0rem;
     background-color        : #1D2429;
 }
 
@@ -209,7 +209,7 @@ button[type='button'] {
 
 }
 
-@media (max-width: 426px) {  
+@media (max-width: 426px) {   
 
     .sponsor-banner img{
         max-width               : 240px;
@@ -218,6 +218,7 @@ button[type='button'] {
 
     .banner-overflow {
         overflow-x              : scroll !important;
+        width                   : 100%;
         height                  : fit-content;
     }
 
@@ -262,6 +263,13 @@ button[type='button'] {
     
 }
 
+/* Tablets */
+@media only screen  and (min-width : 768px) {
+    .banner-overflow {
+      width: 75% !important;
+    }
+  }
+
 
 @media (min-width: 992px) {  
     .w-lg-80 {
@@ -295,8 +303,9 @@ button[type='button'] {
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
     /* Styles */
-    .sponsor-banner {
-        height: 15vh !important;
+
+    .banner-overflow {
+        width: 85% !important;
     }
 }
     
@@ -306,6 +315,6 @@ button[type='button'] {
 
     .sponsor-banner {
         height: fit-content !important;
-        padding: 1.5rem !important;
+        padding: 2rem !important;
     }
 }
