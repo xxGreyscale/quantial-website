@@ -2,4 +2,13 @@
     background-color        : #3A6380;
     width                   : 100%;
     color                   : #ffffff;
+    padding-bottom          : 6rem;
+}
+
+
+@media (min-width: 992px) {
+    .partners.carousel {
+        padding-bottom          : 8rem;
+    }
+    
 }

@@ -4,8 +4,16 @@
     background-image        : url('../../images/contact-us.jpg');
     width                   : 100%;
     color                   : #ffffff;
+    padding-bottom          : 6rem;
 }
 
 @media (max-width: 426px) {  
 
+}
+
+@media (min-width: 992px) {
+    .contacts.carousel {
+        padding-bottom          : 6rem;
+    }
+    
 }

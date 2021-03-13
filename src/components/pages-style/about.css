@@ -2,6 +2,7 @@
     background-image        : url('../../images/about-us.jpg');
     width                   : 100%;
     color                   : #ffffff;
+    padding-bottom          : 6rem;
 }
 
 #quantial_values img {
@@ -13,4 +14,12 @@
 
 @media (max-width: 426px) {  
 
+}
+
+
+@media (min-width: 992px) {
+    .about.carousel {
+        padding-bottom          : 8rem;
+    }
+    
 }
