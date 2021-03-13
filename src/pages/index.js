@@ -22,6 +22,7 @@ import Bayport from '../images/client_logo/bayport.png'
 import Aar from '../images/client_logo/Aar.png'
 import Mcl from '../images/client_logo/mcl-small.png'
 import Lologo from '../images/client_logo/lolgo.png'
+import Kb4 from '../images/client_logo/kb4.png'
 
 
 const IndexPage = () => {
@@ -109,13 +110,14 @@ const IndexPage = () => {
             <div className="col-12 my-2 mb-5 my-md-0 my-lg-0 col-md-8 col-lg-9 ">
               <div id="client_logos" className="d-inline-flex align-items-center sponsors-logo banner-overflow">
                 <img src={Alaf} alt="alaf logo" className="col my-0 mr-2 ml-0 d-lg-inline"/>
-                <img src={Shanta} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
-                <img src={Muhimbili} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
-                <img src={Tanesco} alt="alaf logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
-                <img src={Bayport} alt="alaf logo" className="col my-0 ml-3 px-4 d-lg-inline"/>
+                <img src={Shanta} alt="shanta gold logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
+                <img src={Muhimbili} alt="muhimbili logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
+                <img src={Tanesco} alt="Teanesco logo" className="col my-0 mx-3 px-4 d-lg-inline"/>
+                <img src={Bayport} alt="bayport logo" className="col my-0 ml-3 px-4 d-lg-inline"/>
                 <img src={Aar} alt="aar logo" height="60" className="col my-0 mx-3 px-4 d-lg-inline"/>
                 <img src={Mcl} alt="mcl logo" height="60" className="col my-0 mx-3 px-4 d-lg-inline"/>
                 <img src={Lologo} alt="lo logo" height="60" className="col my-0 mx-3 px-4 d-lg-inline"/>
+                <img src={Kb4} alt="KnowBe4 logo" height="48" className="col my-0 mx-3 px-4 d-lg-inline"/>
 
               </div>
 
