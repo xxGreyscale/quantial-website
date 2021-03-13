@@ -1,5 +1,5 @@
 footer {
-    height                  : 50vh;
+    height                  : fit-content;
     background-color        : var(--primary-color);
 }
 
