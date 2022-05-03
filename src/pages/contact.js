@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Layout from "../components/layout";
 import { Container } from "react-bootstrap"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../components/pages-style/contacts.css"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { FiChevronsDown } from "react-icons/fi";
@@ -69,7 +69,7 @@ const Contact = () => {
   
   return (
     <Layout>
-    <SEO title="Contact Us" />
+    <Seo title="Contact Us" />
 
 <div
 className="contacts carousel">

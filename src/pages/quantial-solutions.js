@@ -1,8 +1,8 @@
-import React, { useState, useLayoutEffect, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import "../components/pages-style/solutions.css"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Container } from "react-bootstrap"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
@@ -101,7 +101,7 @@ const Solutions = () => {
 
   return (
     <Layout >
-          <SEO title="Our Solutions" />
+          <Seo title="Our Solutions" />
   
           <div onLoad={scrollToContent()} id="quantial_solutions" ref={solutionCarousel}
       className="solutions carousel">

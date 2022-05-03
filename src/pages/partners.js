@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../components/pages-style/partners.css"
 import Logos from "../components/logos"
 
@@ -9,7 +9,7 @@ import Logos from "../components/logos"
 
 const Partners = () => (
     <Layout>
-            <SEO title="Partners" />
+            <Seo title="Partners" />
 
             <div className="partners carousel">
             <Container className="h-100 w-100">

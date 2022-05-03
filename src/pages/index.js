@@ -11,7 +11,7 @@ import { FiChevronsDown } from "react-icons/fi";
 
 import Layout from "../components/layout"
 import Logos from "../components/logos"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import HumanResources from '../images/assets/humanresources.png'
 import SocialCare from '../images/assets/socialcare.png'
 import Alaf from '../images/client_logo/alaf.png'
@@ -46,7 +46,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <div
       className="home carousel">
        <Container className="h-100 w-100">

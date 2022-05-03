@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import {GatsbyImage} from 'gatsby-plugin-image'
 import {useStaticQuery, graphql } from 'gatsby'
 
 
@@ -10,9 +10,7 @@ const Logos = () => {
             edges {
             node {
                 childImageSharp {
-                fixed (width: 200, quality: 100) {
-                    ...GatsbyImageSharpFixed
-                }
+                    gatsbyImageData(layout: CONSTRAINED)
                 }
             }
             }
@@ -25,11 +23,12 @@ const Logos = () => {
     }
     
     return  data?.allFile.edges.map(({node}, i) => (
+
         <div className="col-6 col-md-4 col-lg-3 d-flex mt-4 mt-lg-4 mb-5 mb-lg-5" key={i}>
-            <Img objectFit="contain"
+            <GatsbyImage objectFit="contain"
             imgStyle={{ objectFit: 'contain'}}
             key={i}
-            objectPosition="50% 50%" fixed={node.childImageSharp.fixed} />
+            objectPosition="50% 50%" image={node.childImageSharp.gatsbyImageData}/>
         </div>
       )) 
 
