@@ -808,12 +808,21 @@ button[type=submit] {
   width: fit-content;
   border-radius: .125rem !important;
   padding: 1rem 1.5rem !important;
-  background-color: var(--primary-color) !important;
+  background-color: var(--primary-color);
   color: #ffffff !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
 }
 
+button[type=submit].btn-success {
+  background-color: #5cb85c !important;
+}
+
+
+
+button[type=submit].quantial-btn {
+  background-color: var(--primary-color) !important;
+}
 
 @media only screen and (max-width: 480px) {
   .contacts.scrolled {
