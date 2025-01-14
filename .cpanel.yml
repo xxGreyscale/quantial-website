@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/xd9pyooy96fh/public_html/
+    - export DEPLOYPATH=/home/quantial/public_html/
     - /bin/cp -R public/* $DEPLOYPATH
