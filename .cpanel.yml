@@ -1,5 +1,8 @@
 ---
 deployment:
   tasks:
+    - sudo apt update
+    - sudo apt install nodejs npm
     - export DEPLOYPATH=/home/quantial/public_html/
+    - nmp run dev
     - /bin/cp -R public/* $DEPLOYPATH
