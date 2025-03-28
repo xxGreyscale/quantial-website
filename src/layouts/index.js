@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"
 import Header from "../components/header"
 import { useStaticQuery, graphql } from "gatsby"
 import "./view.css"
 
+import { TransitionGroup, CSSTransition } from "react-transition-group"
+import { useLocation } from "@reach/router"
 
-import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions";
-
-const Layout = ({ location, children }) => {
-    const data = useStaticQuery(graphql`
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -17,41 +17,29 @@ const Layout = ({ location, children }) => {
     }
   `)
 
+  const location = useLocation()
+  const timeout = 300 // Adjust as needed for your transition duration
+
   return (
-    <TransitionProvider
-            location={location}
-            mode="immediate"
-            enter={{
-                opacity: 0,
-                // transform: "translate3d(0,20vh,0) scale3d(1, 1, 1) rotate(0deg)",
-                config: {
-                mass: 1,
-                tension: 210,
-                friction: 20,
-                clamp: true
-                },
-                onRest: () => {
-                console.log("Hello, World!");
-                }
-            }}
-            usual={{
-                opacity: 1,
-                // transform: "translate3d(0vh,0vh,0) scale3d(1, 1, 1) rotate(0deg)"
-            }}
-            leave={{
-                opacity: 0,
-                // transform: "translate3d(0vh,0vh,0) scale3d(2, 1, 1) rotate(0deg)",
-                config: {
-                duration: 100
-                }
-            }}>
-      <TransitionViews>
-        {children}
-      </TransitionViews>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <div className="layout">
+      <main>
+        <TransitionGroup>
+          <CSSTransition
+            key={location.pathname}
+            timeout={timeout}
+            classNames="fade" // Use a class name prefix for your CSS
+            mountOnEnter={false}
+            unmountOnExit={true}
+          >
+            <div style={{ position: "relative", width: "100%" }}>
+              <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+              {children}
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
+      </main>
+    </div>
+  )
+}
 
-    </TransitionProvider>
-  );
-};
-
-export default Layout;
+export default Layout
