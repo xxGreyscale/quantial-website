@@ -204,7 +204,7 @@ const Solutions = () => {
                       <span className="stat-no">92%</span>
                     </p>
 
-                    <p className="d-inline-flex my-auto text-white ml-3">
+                    <p className="d-inline-flex my-auto text-white ms-3">
                       of cyber attack breaches are caused by emails opened by
                       staff.
                     </p>
@@ -215,7 +215,7 @@ const Solutions = () => {
                       <span className="stat-no">$3.68m</span>
                     </p>
 
-                    <p className="d-inline-flex my-auto text-white ml-3">
+                    <p className="d-inline-flex my-auto text-white ms-3">
                       the global average loss companies face due to data breach.
                     </p>
                   </div>
@@ -225,7 +225,7 @@ const Solutions = () => {
                       <span className="stat-no">64%</span>
                     </p>
 
-                    <p className="d-inline-flex my-auto text-white ml-3">
+                    <p className="d-inline-flex my-auto text-white ms-3">
                       of the customers unlikely to do business with companies
                       that have sensitive data breach.
                     </p>
@@ -289,7 +289,7 @@ const Solutions = () => {
                       <span className="stat-no">25%</span>
                     </p>
 
-                    <p className="d-inline-flex my-auto text-white ml-3">
+                    <p className="d-inline-flex my-auto text-white ms-3">
                       average reduction in IT expenditures when using managed
                       services.
                     </p>
@@ -300,7 +300,7 @@ const Solutions = () => {
                       <span className="stat-no">67%</span>
                     </p>
 
-                    <p className="d-inline-flex my-auto text-white ml-3">
+                    <p className="d-inline-flex my-auto text-white ms-3">
                       companies use managed services to simplify network and IT
                       operations.
                     </p>
@@ -332,7 +332,7 @@ const Solutions = () => {
                     MANAGED NETWORK
                     <br /> SOLUTIONS
                   </h4>
-                  <p className="para-3 ml-n5 pl-2 pr-1">
+                  <p className="para-3 ms-n5 ps-2 pe-1">
                     Assessment of the impact of new technologies and services
                     for LAN, WAN, and WiFi networks. End-to-End LAN, WAN, and
                     WiFi network management - from the data center to network
@@ -347,7 +347,7 @@ const Solutions = () => {
                     managed Security
                     <br /> solutions
                   </h4>
-                  <p className="para-3 ml-n5 pl-2 pr-1">
+                  <p className="para-3 ms-n5 ps-2 pe-1">
                     Continuous protection and preparation of your environment
                     for effective response to cyber threats. We work at many
                     levels to provide protection to our clients and develop new
@@ -362,7 +362,7 @@ const Solutions = () => {
                     desktop support
                     <br /> solutions
                   </h4>
-                  <p className="para-3 ml-n5 pl-2 pr-1">
+                  <p className="para-3 ms-n5 ps-2 pe-1">
                     We work to create a stable and consistent computing
                     environment for your staff. Our computer support personnel
                     focus on improving process, preventing problems from
@@ -509,7 +509,7 @@ const Solutions = () => {
                       <small>/minute</small>
                     </p>
 
-                    <p className="d-inline-flex my-auto text-white ml-3">
+                    <p className="d-inline-flex my-auto text-white ms-3">
                       Global cost of data centre downtime
                     </p>
                   </div>
@@ -536,7 +536,7 @@ const Solutions = () => {
               <li className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                 <div className="w-100">
                   <h4 className="text-black">DATA MANAGEMENT</h4>
-                  <p className="para-3 ml-n5 pl-2 pr-1">
+                  <p className="para-3 ms-n5 ps-2 pe-1">
                     Automation of the movement of critical data to online and
                     offline storage as well as offering a comprehensive
                     strategy/solution for valuing, cataloging and protecting
@@ -549,7 +549,7 @@ const Solutions = () => {
               <li className="col-12 col-md col-lg mt-3 mt-md-3 mt-lg-0 px-2">
                 <div className="w-100">
                   <h4 className="text-black"> DATA AVAILABILITY</h4>
-                  <p className="para-3 ml-n5 pl-2 pr-1">
+                  <p className="para-3 ms-n5 ps-2 pe-1">
                     Ensures business continuity by making sure users have the
                     data they need to conduct business even if the data is
                     damaged or lost. <br /> <br />

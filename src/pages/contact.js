@@ -119,18 +119,27 @@ const Contact = () => {
                             : "mt-2 font-weight-normal"
                         }
                       >
-                        <li style={{ gridGap: "0rem" }} className="my-1">
+                        <li
+                          style={{ gridGap: "0rem" }}
+                          className="my-1 d-inline-block"
+                        >
                           6th Floor, Tanzanite Park,
                           <br /> Old Bagamoyo Road,
                           <br />
                           Dar es Salaam, TANZANIA
                         </li>
-                        <li style={{ gridGap: "0rem" }} className="my-1">
+                        <li
+                          style={{ gridGap: "0rem" }}
+                          className="my-1 d-inline-block"
+                        >
                           PHONE:
                           <br />
                           +255 785 083 324
                         </li>
-                        <li style={{ gridGap: "0rem" }} className="my-1">
+                        <li
+                          style={{ gridGap: "0rem" }}
+                          className="my-1 d-inline-block"
+                        >
                           EMAIL:
                           <br />
                           info@quantial.solutions
@@ -180,13 +189,13 @@ const Contact = () => {
                 <label htmlFor="name">Name:</label>
                 <input
                   type="text"
-                  onChange={event =>{
+                  onChange={event => {
                     setIsSuccessful(false)
                     setContactMessage({
                       ...contactMessage,
                       email: event.target.value,
-                    })}
-                  }
+                    })
+                  }}
                   className="form-control rounded-sm"
                   name="name"
                   id="name"
@@ -199,13 +208,13 @@ const Contact = () => {
                 <label htmlFor="email">Email:</label>
                 <input
                   type="email"
-                  onChange={event =>{
+                  onChange={event => {
                     setIsSuccessful(false)
                     setContactMessage({
                       ...contactMessage,
                       email: event.target.value,
-                    })}
-                  }
+                    })
+                  }}
                   className="form-control rounded-sm"
                   name="email"
                   id="email"
@@ -221,13 +230,13 @@ const Contact = () => {
                 <label htmlFor="subject">Subject:</label>
                 <input
                   type="text"
-                  onChange={event =>{
+                  onChange={event => {
                     setIsSuccessful(false)
                     setContactMessage({
                       ...contactMessage,
                       email: event.target.value,
-                    })}
-                  }
+                    })
+                  }}
                   className="form-control rounded-sm"
                   name="subject"
                   id="subject"
@@ -240,13 +249,13 @@ const Contact = () => {
                 <label htmlFor="message">Message:</label>
                 <textarea
                   className="form-control rounded-sm"
-                  onChange={event =>{
+                  onChange={event => {
                     setIsSuccessful(false)
                     setContactMessage({
                       ...contactMessage,
                       email: event.target.value,
-                    })}
-                  }
+                    })
+                  }}
                   id="message"
                   placeholder="How may we help you?"
                   rows="8"
@@ -256,14 +265,18 @@ const Contact = () => {
 
               <div className="d-flex justify-content-end">
                 <button
-                  className={isSuccessful ? "btn btn-sm-lg btn-success" : "btn btn-sm-lg .quantial-btn"}
+                  className={
+                    isSuccessful
+                      ? "btn btn-sm-lg btn-success"
+                      : "btn btn-sm-lg .quantial-btn"
+                  }
                   onClick={submitForm}
                   type="submit"
                 >
                   {loading && !isSuccessful && (
                     <span>
                       <span
-                        className="spinner-border spinner-border-sm mr-3"
+                        className="spinner-border spinner-border-sm me-3"
                         role="status"
                       ></span>
                       Submitting...
@@ -274,10 +287,17 @@ const Contact = () => {
 
                   {isSuccessful && (
                     <span>
-                      <span className="mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-</svg>
+                      <span className="me-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                        </svg>
                       </span>
                       Submitted
                     </span>
