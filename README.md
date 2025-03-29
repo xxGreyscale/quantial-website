@@ -3,9 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
-
-[Provide a brief and engaging description of the Quantial website here. What is the purpose of this website? What kind of information or services does it offer? Who is the target audience?]
-
+Quantial Solutions IT Services and IT Consulting 
 This repository contains the source code for the Quantial website, accessible at [https://quantial.co.tz/](https://quantial.co.tz/).
 
 ## Table of Contents
@@ -18,8 +16,6 @@ This repository contains the source code for the Quantial website, accessible at
 - [Contact](#contact)
 
 ## Installation
-
-[Provide clear and concise instructions on how to set up the website locally for development or testing. This section should include prerequisites and step-by-step guides.]
 
 For example:
 
@@ -56,11 +52,9 @@ For example:
 
 ## Usage
 
-[Explain how to use the website. Highlight key features and functionalities. Provide examples or screenshots if necessary.]
-
 For example:
 
-- **Homepage:** Briefly describe the content and purpose of the homepage.
+- **Homepage:** Presents quantial home page 
 - **Services:** Explain the different services offered by Quantial.
 - **About Us:** Describe the company or organization behind the website.
 - **Contact:** Provide information on how to get in touch.
@@ -90,13 +84,9 @@ Please follow the [Code of Conduct](link-to-code-of-conduct) and [Contributing G
 
 ## License
 
-[Specify the license under which your project is distributed. A common license for open-source projects is MIT.]
-
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contact
-
-[Provide contact information or links for support or inquiries.]
 
 - **Website:** [https://quantial.co.tz/](https://quantial.co.tz/)
 - **Email:** [madebysalinastic@gmail.com]
