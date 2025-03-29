@@ -91,7 +91,3 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 - **Website:** [https://quantial.co.tz/](https://quantial.co.tz/)
 - **Email:** [madebysalinastic@gmail.com]
 - **GitHub:** [https://github.com/xxGreyscale](https://github.com/xxGreyscale)
-
----
-
-**Note:** Please replace the bracketed placeholders above with the actual information for your Quantial website. This README provides a basic structure; feel free to add more sections or details as needed.
