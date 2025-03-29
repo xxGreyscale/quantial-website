@@ -99,7 +99,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 [Provide contact information or links for support or inquiries.]
 
 - **Website:** [https://quantial.co.tz/](https://quantial.co.tz/)
-- **Email:** [Your Email Address]
+- **Email:** [madebysalinastic@gmail.com]
 - **GitHub:** [https://github.com/xxGreyscale](https://github.com/xxGreyscale)
 
 ---
